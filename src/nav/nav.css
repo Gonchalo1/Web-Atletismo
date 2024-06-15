@@ -1,0 +1,83 @@
+.header-container {
+    display: flex;
+    justify-content: space-around; /* Cambio de 'space-around' a 'space-between' */
+    align-items: center;
+    padding: 25px 20px;
+    
+    background-color: #8b0000;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.email-text {
+    font-size: 14px;
+    color: #000;
+}
+
+.navbar-nav{
+    margin-right: 40vh;
+}
+
+.navbar-nav .nav-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: " |";
+    margin-left: 5px;
+}
+
+.navbar-nav .nav-item:last-child .nav-link::after {
+    content: "";
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.header-button {
+    margin-left: 10px;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-item .nav-link::after {
+        content: "";
+    }
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+    display: block;
+    content: '';
+}
