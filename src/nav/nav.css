@@ -2,7 +2,6 @@
 .header-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     padding: 25px 1px;
     color: #FFFFFF;
     background-color: #6C2F2F;
@@ -14,6 +13,7 @@
 .header-left {
     display: flex;
     align-items: center;
+    margin-right: 8vh;
 }
 
 .header-logo {
@@ -30,7 +30,7 @@
 }
 
 .email-text {
-    font-size: 14px;
+    font-size: 16px;
     color: #FFFFFF;
 }
 
@@ -54,12 +54,16 @@
 
 /* Estilos para los elementos de la barra de navegación */
 .navbar-nav {
-    margin-right: 50vh; /* Ajusta según necesidad */
+    margin-right: 40vh; /* Ajusta según necesidad */
+    height: 100%;
 }
-
+.nav-item{
+    height: 60px;
+}
 .navbar-nav .nav-item {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 17px;
+    font-size: 18px;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -88,9 +92,21 @@
 }
 
 .header-button {
-    margin-left: 50px;
+    margin-left: 40px;
     width: 200px;
-    height: 70px;
+    height: 60px;
+}
+.header-button:hover {
+    content: "";
+    position: absolute;
+    border-radius: 6px;
+    width: 0;
+    height: 0;
+    background-color: #dcdcdc;
+    transition: .5s cubic-bezier(.5,-.5,.25,1.5);
+    top: 6px;
+    left: 6px;
+    z-index: -1;
 }
 
 .navbar-toggler {
@@ -105,7 +121,11 @@
     outline: none;
     box-shadow: none;
 }
-
+.bi-instagram{
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 @media (max-width: 991.98px) {
     .navbar-nav {
         margin-right: 0; /* Ajuste el margen derecho a 0 en dispositivos móviles */

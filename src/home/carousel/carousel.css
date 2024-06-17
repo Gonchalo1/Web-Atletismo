@@ -1,0 +1,31 @@
+
+#carouselExampleDark {
+    max-width: 100%; /* Ancho máximo del carousel */
+    margin: auto; /* Centrar el carousel horizontalmente */
+    overflow: hidden; /* Ocultar contenido que se desborde */
+}
+
+.carousel-inner {
+    max-height: 100%;
+}
+
+.carousel-item {
+    height: 400px; /* Altura deseada para las imágenes */
+ position: initial;
+}
+
+.carousel-item .carousel-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Ajustar el ancho al 100% del carousel */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+.carousel-caption {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}

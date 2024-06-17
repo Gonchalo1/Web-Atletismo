@@ -11,21 +11,24 @@ function Nav() {
                     <img src={logo} alt="Logo" className="header-logo" />
                     <Link to="/" className="home-link">
                         <div>
-                            <span className="home-text">RP</span>
-                            <br />
-                            <span className="home-text">RUNNING TEAM</span>
+                            <h4>
+                                <span className="home-text">RP</span>
+                                <br />
+                                <span className="home-text">RUNNING TEAM</span>
+                            </h4>
                         </div>
                     </Link>
                 </div>
                 <div className="contact-info d-none d-sm-flex align-items-center">
                     <i className="bi bi-envelope m-3"></i>
-                    <div>
-                        <p className="mb-0 email-text">Email:</p>
-                        <p className="mb-0 email-text">PamelaMaidana@gmail.com</p>
-                    </div>
+                    <h4>
+                        <div>
+                            <p className="mb-0 email-text">Email:</p>
+                            <p className="mb-0 email-text">PamelaMaidana@gmail.com</p>
+                        </div>
+                    </h4>
                 </div>
             </div>
-            
             <div className="nav-container">
                 <div className="overlay"></div>
                 <nav className="navbar navbar-expand-lg navbar-light">
@@ -36,7 +39,7 @@ function Nav() {
                         <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                             <ul className="navbar-nav mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link className="nav-link active" aria-current="page" to="/">Home </Link>
+                                    <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link active" aria-current="page" to="/noticias">Noticias</Link>

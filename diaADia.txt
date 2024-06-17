@@ -1,2 +1,6 @@
 dia1-2:
 Estuve maquetando y organizando carpetas y diseñando el nav, voy bien.
+dia3:
+Cási termino con el nav, estoy haciendo el carousel y tengo que enlazarlo con la seccion de noticias,
+asique mañana me ponog a hacer las noticias para luego con variables y probablemente useEstate 
+trabajarlo y enlazarlo con el carousel y luego seguír con home.
