@@ -1,0 +1,140 @@
+h2{
+    margin-bottom: 7%;
+}
+.contenedor-principal {
+    display: block;
+    position: absolute;
+    left: 45%;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contenedor-flex {
+    display: flex;
+    position: relative; /* Importante para posicionar elementos pseudo */
+    gap: 20px; /* Espacio entre div1 y div2 */
+    margin-top: 40px;
+}
+
+
+.contenedor-flex::before {
+    top: 0; /* Alineación en la parte superior del contenedor */
+}
+
+.contenedor-flex::after {
+    bottom: 0; /* Alineación en la parte inferior del contenedor */
+}
+
+.link-noticia {
+    color: black; /* O cualquier otro color que prefieras */
+    text-decoration: none;
+}
+.div1 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px; /* Espacio entre la imagen, ícono y texto */
+    border-radius: 5px;
+    border-right: 1px solid grey;
+}
+
+
+.icono-texto {
+    display: flex;
+    flex-direction: column; /* Alinea el ícono y el texto en columna */
+    align-items: center; /* Centra horizontalmente el ícono y el texto */
+    gap: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.icono-calendario {
+    width: 15vh !important;
+    
+}
+
+.div2 {
+    text-align: center;
+    align-content: center;
+    flex-grow: 1; /* Permite que div2 crezca para ocupar el espacio restante */
+    
+}
+
+.informacion {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.h5{
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .contenedor-principal {
+        width: 90%; /* Ajuste para pantallas más pequeñas */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contenedor-flex {
+        display: flex;
+        position: relative; /* Importante para posicionar elementos pseudo */
+        flex-direction: column;
+        border-bottom: 2px solid #e0e0e0;
+        border-top: 2px solid #e0e0e0;
+        gap: 20px; /* Espacio entre div1 y div2 */
+    }
+    
+
+    .div1 {
+        flex-direction: column; /* Cambio a columna en pantallas pequeñas */
+        text-align: center;
+        border-right: none; /* Quita el borde derecho en pantallas pequeñas */
+    }
+
+    .div1 img {
+        width: 100%; /* Imagen ocupa todo el ancho disponible */
+    }
+
+    .div2 {
+        text-align: center;
+    }
+}
+@media (min-width: 1024px) {
+    .contenedor-principal {
+        top: 27%;
+        width: 70%; /* Ajuste del ancho para laptops */
+        transform: translateX(-43%);
+    }
+
+    .div1 {
+        flex-direction: row; /* Cambio de nuevo a fila para laptops */
+        justify-content: flex-start;
+        border-right: 1px solid #d0d0d0; 
+    }
+
+    .div1 img {
+        width: 200px; /* Restaura el ancho de la imagen para laptops */
+    }
+
+    .div2 {
+        text-align: center; /* Restaura el alineado a la izquierda para laptops */
+    }
+    .contenedor-flex::before,
+.contenedor-flex::after {
+    content: ''; /* Contenido vacío necesario para el pseudo-elemento */
+    position: absolute; /* Posicionamiento absoluto relativo al contenedor */
+    width: 82%; /* Ancho de la línea, ajusta según necesites */
+    border-bottom: 2px solid #e0e0e0;
+    transform: translateY(-50%); /* Centra verticalmente la línea */
+    left: 0; /* Ajusta según donde quieras colocar la línea */
+}
+}
