@@ -11,3 +11,7 @@ y 20 minutos
 He finalizado mi jornada de 8 horas el día de hoy, y he finalizado noticias y noticiasEnSi.
 Me queda el resto de las secciones y el carousel de inicio, pero quiero trabajar con el footer, los 
 colores y todo antes de home, así no me frustro por tardar mucho con un carousel u otra cosa.
+dia5:
+Empezamos a full yupi.
+Hice la parte de precios y cási termino la parte de redes del equipo, nomas es cuestión de tiempo
+para sacar la línea parpadeante.

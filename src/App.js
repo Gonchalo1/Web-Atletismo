@@ -9,7 +9,7 @@ import './App.css';
 import Nav from './nav/nav'; 
 import Noticias from './noticias/noticias';
 import Precio from './precio/precio';
-import Redes from './redes/redes'; 
+import Miembros from './miembros/miembros';
 import Ubicacion from './ubicacion/ubicacion';
 import Contacto from './contacto/contacto';
 import Footer from './footer/footer';
@@ -21,6 +21,7 @@ import NoticiaEnSi4 from './noticias/noticiaEnSi/noticiaEnSi4';
 import NoticiaEnSi5 from './noticias/noticiaEnSi/noticiaEnSi5';
 import NoticiaEnSi6 from './noticias/noticiaEnSi/noticiaEnSi6';
 
+
 function App() {
   return (
     <Router>
@@ -29,7 +30,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/precio" element={<Precio />} />
-          <Route path="/redes" element={<Redes />} />
+          <Route path="/miembros" element={<Miembros />} />
           <Route path="/ubicacion" element={<Ubicacion />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/noticias" element={<Noticias />} />

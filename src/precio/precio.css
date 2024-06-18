@@ -1,0 +1,126 @@
+h2{
+    margin-bottom: 7%;
+}
+.contenedor-principal2 {
+    display: block;
+    position: absolute;
+    left: 28%;
+    width: 31%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contenedor-flex2 {
+    display: flex;
+    position: relative; /* Importante para posicionar elementos pseudo */
+    gap: 20px; /* Espacio entre div1 y div2 */
+    margin-top: 40px;
+}
+
+
+
+
+.precio {
+    color: black; /* O cualquier otro color que prefieras */
+    text-decoration: none;
+}
+.div1Precio {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 10px; /* Espacio entre la imagen, ícono y texto */
+    border-radius: 5px;
+    border-right: 1px solid grey;
+}
+
+
+.precioEnSi {
+    display: flex;
+    flex-direction: column; /* Alinea el ícono y el texto en columna */
+    align-items: center; /* Centra horizontalmente el ícono y el texto */
+    gap: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.div2Precio {
+    text-align: center;
+    align-content: center;
+    flex-grow: 1; /* Permite que div2 crezca para ocupar el espacio restante */
+    
+}
+
+.informacionDias {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.h4Dias{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.bi-currency-dollar{
+    font-size: 70px;
+    margin-bottom: 13px;
+}
+.h5Precio{
+    font-weight: bold;
+    font-size: 30PX;
+}
+@media (max-width: 768px) {
+    .contenedor-principal2 {
+        width: 90%; /* Ajuste para pantallas más pequeñas */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contenedor-flex2 {
+        display: flex;
+        position: relative; /* Importante para posicionar elementos pseudo */
+        flex-direction: column;
+        border-bottom: 2px solid #e0e0e0;
+        border-top: 2px solid #e0e0e0;
+        gap: 20px; /* Espacio entre div1 y div2 */
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+    
+
+    .div1Precio {
+        flex-direction: column; /* Cambio a columna en pantallas pequeñas */
+        text-align: center;
+        border-right: none; /* Quita el borde derecho en pantallas pequeñas */
+    }
+
+    .div1Precio img {
+        width: 100%; /* Imagen ocupa todo el ancho disponible */
+    }
+
+    .div2Precio {
+        text-align: center;
+    }
+    .h4Dias{
+        text-align: center;
+    }
+}
+@media (min-width: 1024px) {
+    .contenedor-principal2 {
+        top: 27%;
+        transform: translateX(-43%);
+    }
+
+    .div1Precio {
+        flex-direction: row; /* Cambio de nuevo a fila para laptops */
+        justify-content: flex-start;
+        border-right: 1px solid #d0d0d0; 
+    }
+
+    .div2Precio {
+        text-align: center; /* Restaura el alineado a la izquierda para laptops */
+    }
+    
+}

@@ -48,7 +48,7 @@ function Nav() {
                                     <Link className="nav-link active" aria-current="page" to="/precio">Precios</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link active" aria-current="page" to="/redes">Redes</Link>
+                                    <Link className="nav-link active" aria-current="page" to="/miembros">Miembros</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link active" aria-current="page" to="/contacto">Contacto</Link>

@@ -1,0 +1,64 @@
+.h2{
+    transform: translateX(-25.5%);
+}
+.principal {
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.grilla {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.link-contenido {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.contenido2 {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px; /* Aumenta el tamaño del contenedor */
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0; /* Fondo del contenedor */
+    transition: transform 0.2s ease;
+    
+}
+
+.contenido2:hover {
+    transform: scale(1.05); /* Efecto de escala en hover */
+}
+
+.miembro-img {
+    width: 92%;
+    margin-left: 3px;
+    object-fit: cover;
+}
+.texto {
+    padding: 10px;
+    background-color: #e0f7ff; /* Fondo azul celeste para el texto */
+    text-align: left;
+}
+
+.nombre {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.instagram {
+    color: #125688; /* Color típico de Instagram */
+    text-decoration: none;
+    margin: 0;
+}
+
+.instagram:hover {
+    text-decoration: underline;
+}
