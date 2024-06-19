@@ -1,6 +1,9 @@
 h2{
     margin-bottom: 7%;
 }
+.logo{
+    width: 40px;
+}
 .contenedor-principal2 {
     display: block;
     position: absolute;
@@ -15,7 +18,7 @@ h2{
     display: flex;
     position: relative; /* Importante para posicionar elementos pseudo */
     gap: 20px; /* Espacio entre div1 y div2 */
-    margin-top: 40px;
+    
 }
 
 
@@ -71,6 +74,10 @@ h2{
     font-weight: bold;
     font-size: 30PX;
 }
+.h5Precio3{
+    font-weight: bold;
+    font-size: 22px;
+}
 @media (max-width: 768px) {
     .contenedor-principal2 {
         width: 90%; /* Ajuste para pantallas más pequeñas */
@@ -110,7 +117,8 @@ h2{
 @media (min-width: 1024px) {
     .contenedor-principal2 {
         top: 27%;
-        transform: translateX(-43%);
+        width: 40%; 
+        transform: translateX(-33%);
     }
 
     .div1Precio {

@@ -34,7 +34,7 @@ function Noticias() {
                         <h4 className='h4'>
                             El grupo de running se juntó a festejar el 25 de Mayo post-carrera maya
                         </h4>
-                        
+                        4
                     </div>
                     
                 </div>

@@ -15,3 +15,6 @@ dia5:
 Empezamos a full yupi.
 Hice la parte de precios y cási termino la parte de redes del equipo, nomas es cuestión de tiempo
 para sacar la línea parpadeante.
+dia6:
+terminé la parte de miembros, cambié los colores del nav y nesecito hacer el footer y nose porqué
+el footer no se tira abajo en la parte de noticias y contacto
