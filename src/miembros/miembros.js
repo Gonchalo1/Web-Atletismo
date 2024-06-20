@@ -1,5 +1,7 @@
 import React from 'react';
 import './miembros.css';
+import Footer from '../footer/footer';
+
 import Diez from '../imagenes/10.jpeg'; 
 import Once from '../imagenes/11.jpeg'; 
 import Doce from '../imagenes/12.jpeg'; 
@@ -138,6 +140,7 @@ function Miembros() {
                     </div>
                 </a>
             </div>
+            <Footer/>
         </div>
     );
 }

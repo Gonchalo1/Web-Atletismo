@@ -3,10 +3,13 @@ import React from 'react';
 import './precio.css';
 import { Link } from 'react-router-dom';
 import logo from '../imagenes/logoPrecio.png'
+import Footer from '../footer/footer';
 
 function Precio() {
     return (
-        <div className="contenedor-principal2">
+        
+        <div className="pagina-precios">
+            <div className="contenedor-principal2">
             <h2>Precios<img src={logo} className='logo' alt='logo'/> </h2>
             
             <Link to="/contacto" className="precio">
@@ -54,10 +57,15 @@ function Precio() {
                             <h4 className='h4Dias'>5 Veces por semana</h4>
                         </div>    
                     </div>
+                    
                 </div>
+                
             </Link>
-            
+            </div>
+            <Footer />
         </div>
+        
+        
     );
 }
 

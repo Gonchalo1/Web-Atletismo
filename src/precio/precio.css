@@ -4,16 +4,21 @@ h2{
 .logo{
     width: 40px;
 }
+.pagina-precios {
+    min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espaciar el contenido principal y el footer */
+}
+
 .contenedor-principal2 {
-    display: block;
-    position: absolute;
-    left: 28%;
     width: 31%;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    margin: 0 auto; /* Centra horizontalmente */
+    flex-grow: 1; /* Permite que el contenedor principal crezca y ocupe el espacio restante */
 }
-
 .contenedor-flex2 {
     display: flex;
     position: relative; /* Importante para posicionar elementos pseudo */

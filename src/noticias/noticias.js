@@ -1,6 +1,6 @@
 import React from 'react';
 import './noticias.css';
-
+import Footer from '../footer/footer';
 import { Link } from 'react-router-dom'; 
 
 import Cuatro from '../imagenes/4.jpeg';
@@ -136,6 +136,7 @@ function Noticias() {
                 </div>
             </div>
             </Link>
+            <Footer/>
         </div>
     );
 }

@@ -12,7 +12,7 @@ import Precio from './precio/precio';
 import Miembros from './miembros/miembros';
 import Ubicacion from './ubicacion/ubicacion';
 import Contacto from './contacto/contacto';
-import Footer from './footer/footer';
+
 import Home from './home/home'; 
 import NoticiaEnSi1 from './noticias/noticiaEnSi/noticiaEnSi1';
 import NoticiaEnSi2 from './noticias/noticiaEnSi/noticiaEnSi2';
@@ -20,6 +20,7 @@ import NoticiaEnSi3 from './noticias/noticiaEnSi/noticiaEnSi3';
 import NoticiaEnSi4 from './noticias/noticiaEnSi/noticiaEnSi4';
 import NoticiaEnSi5 from './noticias/noticiaEnSi/noticiaEnSi5';
 import NoticiaEnSi6 from './noticias/noticiaEnSi/noticiaEnSi6';
+import Footer from './footer/footer';
 
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
           <Route path="/noticia/5" element={<NoticiaEnSi5 />} />
           <Route path="/noticia/6" element={<NoticiaEnSi6 />} />
         </Routes>
-        <Footer />
+        
       </div>
     </Router>
   );

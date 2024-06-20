@@ -1,0 +1,115 @@
+/* Estilos generales */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-logo, .footer-contacto, .footer-ubicacion, .footer-creado-por {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.footer-logo img, .footer-contacto img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.footer-logo .logo-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo .logo-texto p {
+    margin: 5px 0;
+}
+
+.footer-logo .logo-texto i {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.footer-secciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.footer-secciones ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-secciones ul li {
+    margin: 5px 0;
+}
+
+.footer-secciones ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-contacto, .footer-ubicacion, .footer-creado-por {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-ubicacion a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-ubicacion i {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.footer-creado-por a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-logo, .footer-contacto, .footer-ubicacion, .footer-creado-por {
+        flex: 1 1 200px;
+        margin-bottom: 0;
+    }
+
+    .footer-secciones {
+        align-items: flex-start;
+    }
+
+    .footer-secciones ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-secciones ul li {
+        margin: 0 10px;
+    }
+}
