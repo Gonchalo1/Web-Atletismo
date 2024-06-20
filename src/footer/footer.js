@@ -7,15 +7,18 @@ import './footer.css';
 function Footer() {
     return (
         <footer className="footer">
-            <div className="footer-logo">
-                <img src={Logo} alt="Logo" />
+                  <div className="footer-logo">
+                <div className="logo-container">
+                    <img src={Logo} alt="Logo" />
+                    <h2>RP</h2>
+                </div>
                 <div className="logo-texto">
-                    <p>Texto al lado de imagen</p>
-                    <p>Texto saraza para poner debajo del ícono</p>
+                    <p>Bienvenido a nuestro equipo de running, descubre sobre nuestro equipo<br/> conecta con nuestros
+                    integrantes y obten nuestra ubicación<br/> para poder entrenar con nosotros<br/> no olvides consultar
+                    los precios.</p>
                     <i className="bi bi-instagram"></i>
                 </div>
-            </div>
-            <div className="footer-secciones">
+            </div><div className="footer-secciones">
                 <p>Secciones</p>
                 <ul>
                     <li>

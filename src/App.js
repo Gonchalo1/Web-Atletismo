@@ -20,7 +20,7 @@ import NoticiaEnSi3 from './noticias/noticiaEnSi/noticiaEnSi3';
 import NoticiaEnSi4 from './noticias/noticiaEnSi/noticiaEnSi4';
 import NoticiaEnSi5 from './noticias/noticiaEnSi/noticiaEnSi5';
 import NoticiaEnSi6 from './noticias/noticiaEnSi/noticiaEnSi6';
-import Footer from './footer/footer';
+
 
 
 function App() {

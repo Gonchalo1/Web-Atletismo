@@ -18,3 +18,5 @@ para sacar la línea parpadeante.
 dia6:
 terminé la parte de miembros, cambié los colores del nav y nesecito hacer el footer y nose porqué
 el footer no se tira abajo en la parte de noticias y contacto, igual me falta programar 
+dia7:
+Seguimos trabajando con el footer, aún me quedan 2 horas y veinte minutos.
