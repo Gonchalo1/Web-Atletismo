@@ -98,7 +98,7 @@
     font-size: 0;
 }
 
-.footer-ubicacion i::before {    
+.footer-ubicacion i::before {
     margin-left: 12px;
     font-size: 35px;
     display: block;
@@ -127,6 +127,7 @@
     width: 95%;
     text-align: start;
     padding: 10px 0;
+    margin: -5px;
     color: #fff;
     border-top: 1px solid #2F2F2F;
 }
@@ -140,30 +141,32 @@
 .footer-creado-por a:hover {
     color: #a6a6a6;
 }
+
 /* Media queries para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .footer {
-        flex-direction: column; /* Cambia a dirección de columna en móviles */
-        align-items: center; /* Centra los elementos en el eje X */
-        text-align: center; /* Centra el texto dentro del footer */
-        padding: 20px; /* Ajuste el padding para dispositivos móviles */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
     }
 
     .footer-logo,
     .footer-secciones,
     .footer-contacto-ubicacion {
         margin-right: 0;
-        margin-bottom: 20px; /* Espacio entre secciones en móviles */
-        text-align: center; /* Alinear al centro en móviles */
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     .footer-secciones {
-        margin-left: 0; /* Alinear al centro en móviles */
+        margin-left: 0;
     }
 
     .footer-logo img,
     .footer-contacto img {
-        width: 80px; /* Ajusta el tamaño de las imágenes */
+        width: 80px;
+        height: auto;
     }
 
     .footer-ubicacion i::before {
@@ -171,31 +174,36 @@
     }
 
     .footer-secciones ul {
-        text-align: center; /* Centra los elementos de la lista */
+        text-align: center;
     }
 
     .logo-container {
-        margin-left: 0; /* Ajuste inicial */
+        justify-content: center; /* Centra la imagen y el texto horizontalmente */
     }
 }
 
-@media (max-width: 425px) {
-    .footer-logo img,
+@media (max-width: 374px) {
+    .footer-logo img {
+        width: 70px; /* Ajusta el tamaño de la imagen */
+        height: auto;
+        transform: translateX(0); /* Ajusta la posición en móviles más pequeños */
+    }
+
     .footer-contacto img {
-        width: 60px; /* Ajusta el tamaño de las imágenes */
+        width: 70px; /* Ajusta el tamaño de las imágenes */
+        height: auto;
     }
 
     .footer-creado-por {
-        width: 100%; /* Asegura que ocupe todo el ancho disponible */
-        padding: 10px; /* Ajuste de padding */
+        width: 100%;
+        padding: 10px;
     }
 
     .footer-creado-por a {
-        font-size: 0.8em; /* Reduce el tamaño del texto en el pie de página */
+        font-size: 0.8em;
     }
 
     .logo-container {
-        margin-left: 0; /* Ajuste para dispositivos móviles más pequeños */
-        text-align: center; /* Alinear al centro en móviles */
+        text-align: center;
     }
 }
