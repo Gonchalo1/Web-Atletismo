@@ -1,3 +1,207 @@
+/* contacto.css */
+
+/* Sección para la portada */
+.portada {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Ajustar según la altura máxima deseada */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+}
+
+/* Contenedor principal */
+.contacto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+/* Sección para lo debajo de la portada */
+.section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Contenedor de la primera imagen */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen1 {
+    margin-left: 37%;
+    width: 150%;
+    height: auto;
+    border-radius: 8px; /* Opcional: Añadir bordes redondeados */
+}
+
+
+.text-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    margin-bottom: 15%;
+    position: relative;
+}
+/*Pseudo elemento creado para ajustar la linea y no molestar al 
+contenedor principal de arriba*/
+.text-container::after {
+    content: ''; /* Crea el pseudo-elemento */
+    position: absolute; /* Permite posicionarlo con left, right, etc. */
+    bottom: 25px; /* Coloca el pseudo-elemento en la parte inferior */
+    left: 30%; /* Ajusta este valor para mover la línea hacia la derecha */
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    border-bottom: 4px solid #219EBC; /* Define el borde */
+}
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/* Imagen 2 y ajuste de texto */
+.imagen2 {
+    transform: translateX(110%);
+    margin-top: 10px;
+    height: auto;
+    
+}
+
+.text-content {
+    margin-left: 29%;
+    padding-top: 20px;
+    max-width: 100%;
+    
+    
+}
+
+.text-content h3, .text-content h1, .text-content p {
+    margin: 0 0 10px;
+}
+
+.text-content h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* LE PONGO UN 4 PORQUE SINO HAY PROBLEMA DE ESTILOS CON LA ESTRUCTURA, PORQUE ME PARECE MEJOR PONER EL 4 ARRIBA DEL 3 */
+/* Estilos para la imagen 4 y su contenedor */
+.image-container-4 {
+    position: relative;
+    overflow: hidden;
+    height: 600px; /* Ajusta la altura según sea necesario */
+}
+.image-container-4 .imagen4 {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Estilos para la tercera imagen y texto */
+/* Nuevo contenedor para evitar interferencias */
+.section-3 {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    width: 200px;
+    
+}
+
+.image-container-3 {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    
+}
+
+.imagen3 {
+    width: 150%;
+    margin-left: 40%;
+    
+    height: auto;
+    border-radius: 8px; 
+}
+
+.text-container-3 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.text-content-3 {
+    margin-left: 29%;
+    margin-bottom: 27%;
+    padding-top: 20px;
+    max-width: 100%;
+}
+
+.text-content-3 h3, .text-content-3 p, .text-content-3 ul {
+    margin: 0 0 25px;
+}
+.text-content-3 h3{
+    border-bottom: 4px solid #219EBC;
+    transition: transform 1.5s ease;
+    width: 100px;
+}
+.text-content-3 h3:hover{
+    transform: scale(1.1);
+}
+.text-content-3 p {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mission-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.mission-item {
+    margin: 0 0 10px;
+}
+
+.bi-check-circle-fill{
+    color:#219EBC ;
+}
 
 
 
@@ -5,7 +209,37 @@
 
 
 
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 
 
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .section, .section-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen2, .imagen3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .text-container, .text-container-3 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-content, .text-content-3 {
+        margin-left: 0;
+    }
+}
