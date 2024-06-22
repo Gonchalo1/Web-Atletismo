@@ -20,3 +20,7 @@ terminé la parte de miembros, cambié los colores del nav y nesecito hacer el f
 el footer no se tira abajo en la parte de noticias y contacto, igual me falta programar 
 dia7:
 Seguimos trabajando con el footer, aún me quedan 2 horas y veinte minutos.
+dia8:
+Estuve terminando el footer y ajustando estilos y me di cuenta de que todo este tiempo trabajé mal
+con el css, pero estoy aprendiendo de a poco y ahora con la parte de contacto, tengo que laburar
+mucho peor lo hago parte por parte fraccionando, en vez de hacerlo todo d1. Voy progresando.

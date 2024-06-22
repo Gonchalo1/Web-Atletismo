@@ -2,7 +2,7 @@
 import React from 'react';
 import './precio.css';
 import { Link } from 'react-router-dom';
-import logo from '../imagenes/logoPrecio.png'
+import logo from '../imagenes/precioImagenes/logoPrecio.png'
 import Footer from '../footer/footer';
 
 function Precio() {

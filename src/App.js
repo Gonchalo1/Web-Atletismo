@@ -10,7 +10,6 @@ import Nav from './nav/nav';
 import Noticias from './noticias/noticias';
 import Precio from './precio/precio';
 import Miembros from './miembros/miembros';
-import Ubicacion from './ubicacion/ubicacion';
 import Contacto from './contacto/contacto';
 
 import Home from './home/home'; 
@@ -32,7 +31,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/precio" element={<Precio />} />
           <Route path="/miembros" element={<Miembros />} />
-          <Route path="/ubicacion" element={<Ubicacion />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/noticias" element={<Noticias />} />
           <Route path="/noticia/1" element={<NoticiaEnSi1 />} />

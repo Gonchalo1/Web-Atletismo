@@ -1,139 +1,147 @@
-h2{
+/* Título */
+h2 {
     margin-bottom: 7%;
 }
-.logo{
+
+/* Logo */
+.logo {
     width: 40px;
 }
+
+/* Página de Precios */
 .pagina-precios {
-    min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la ventana */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Espaciar el contenido principal y el footer */
+    justify-content: space-between;
 }
 
+/* Contenedor Principal */
 .contenedor-principal2 {
-    width: 31%;
+    width: 40%;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin: 0 auto; /* Centra horizontalmente */
-    flex-grow: 1; /* Permite que el contenedor principal crezca y ocupe el espacio restante */
+    flex-grow: 1;
 }
+
+/* Contenedor Flex */
 .contenedor-flex2 {
     display: flex;
-    position: relative; /* Importante para posicionar elementos pseudo */
-    gap: 20px; /* Espacio entre div1 y div2 */
-    
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-
-
-
+/* Enlaces */
 .precio {
-    color: black; /* O cualquier otro color que prefieras */
+    color: black;
     text-decoration: none;
 }
+
+/* Estilos de Div1Precio */
 .div1Precio {
     display: flex;
     align-items: center;
     padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    gap: 10px; /* Espacio entre la imagen, ícono y texto */
+    margin: 20px 0;
+    gap: 10px;
     border-radius: 5px;
     border-right: 1px solid grey;
 }
 
-
+/* Precio en Sí */
 .precioEnSi {
     display: flex;
-    flex-direction: column; /* Alinea el ícono y el texto en columna */
-    align-items: center; /* Centra horizontalmente el ícono y el texto */
-    gap: 5px; /* Espacio entre el ícono y el texto */
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
+/* Estilos de Div2Precio */
 .div2Precio {
     text-align: center;
-    align-content: center;
-    flex-grow: 1; /* Permite que div2 crezca para ocupar el espacio restante */
-    
+    flex-grow: 1;
 }
 
+/* Información de Días */
 .informacionDias {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.h4Dias{
+/* Estilos de Texto */
+.h4Dias {
     margin: 0;
     font-size: 30px;
     font-weight: bold;
     line-height: 1.5;
 }
-.bi-currency-dollar{
+
+.bi-currency-dollar {
     font-size: 70px;
     margin-bottom: 13px;
 }
-.h5Precio{
+
+.h5Precio {
     font-weight: bold;
-    font-size: 30PX;
+    font-size: 30px;
 }
-.h5Precio3{
+
+.h5Precio3 {
     font-weight: bold;
     font-size: 22px;
 }
+
+/* Media Queries */
 @media (max-width: 768px) {
     .contenedor-principal2 {
         width: 90%; /* Ajuste para pantallas más pequeñas */
-        left: 50%;
-        transform: translateX(-50%);
+        margin: 0 auto; /* Centra horizontalmente */
+        padding: 10px; /* Ajusta el padding */
     }
 
     .contenedor-flex2 {
-        display: flex;
-        position: relative; /* Importante para posicionar elementos pseudo */
         flex-direction: column;
-        border-bottom: 2px solid #e0e0e0;
-        border-top: 2px solid #e0e0e0;
-        gap: 20px; /* Espacio entre div1 y div2 */
-        margin-top: 20px;
-        margin-bottom: 100px;
+        border: none; /* Quita las líneas en pantallas pequeñas */
+        margin: 20px 0;
     }
-    
 
     .div1Precio {
-        flex-direction: column; /* Cambio a columna en pantallas pequeñas */
+        flex-direction: column;
         text-align: center;
-        border-right: none; /* Quita el borde derecho en pantallas pequeñas */
+        border-right: none;
     }
 
     .div1Precio img {
-        width: 100%; /* Imagen ocupa todo el ancho disponible */
+        width: 100%;
     }
 
     .div2Precio {
         text-align: center;
     }
-    .h4Dias{
+
+    .h4Dias {
         text-align: center;
     }
 }
+
 @media (min-width: 1024px) {
     .contenedor-principal2 {
-        top: 27%;
-        width: 40%; 
-        transform: translateX(-33%);
+        width: 70%; /* Ajuste del ancho para laptops */
+        margin: 0 auto; /* Centra horizontalmente */
+        padding: 20px; /* Asegura un padding adecuado */
     }
 
     .div1Precio {
-        flex-direction: row; /* Cambio de nuevo a fila para laptops */
+        flex-direction: row;
         justify-content: flex-start;
-        border-right: 1px solid #d0d0d0; 
+        border-right: 1px solid #d0d0d0;
     }
 
     .div2Precio {
-        text-align: center; /* Restaura el alineado a la izquierda para laptops */
+        text-align: left; /* Ajusta el alineado en pantallas grandes */
     }
-    
 }
