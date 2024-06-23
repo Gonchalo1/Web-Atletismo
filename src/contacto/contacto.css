@@ -25,11 +25,7 @@
     max-width: 1200px;
 }
 
-
-
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
 
 /* Contenedor de la primera imagen */
 .image-container {
@@ -46,7 +42,6 @@
     border-radius: 8px; /* Opcional: Añadir bordes redondeados */
 }
 
-
 .text-container {
     flex: 2;
     display: flex;
@@ -57,8 +52,7 @@
     margin-bottom: 15%;
     position: relative;
 }
-/*Pseudo elemento creado para ajustar la linea y no molestar al 
-contenedor principal de arriba*/
+
 .text-container::after {
     content: ''; /* Crea el pseudo-elemento */
     position: absolute; /* Permite posicionarlo con left, right, etc. */
@@ -68,31 +62,19 @@ contenedor principal de arriba*/
     border-bottom: 4px solid #219EBC; /* Define el borde */
 }
 
-
-
-
-
-
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
 
 /* Imagen 2 y ajuste de texto */
 .imagen2 {
     transform: translateX(110%);
     margin-top: 10px;
     height: auto;
-    
 }
 
 .text-content {
     margin-left: 29%;
     padding-top: 20px;
     max-width: 100%;
-    
-    
 }
 
 .text-content h3, .text-content h1, .text-content p {
@@ -109,18 +91,15 @@ contenedor principal de arriba*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
-
-
-
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* LE PONGO UN 4 PORQUE SINO HAY PROBLEMA DE ESTILOS CON LA ESTRUCTURA, PORQUE ME PARECE MEJOR PONER EL 4 ARRIBA DEL 3 */
+
 /* Estilos para la imagen 4 y su contenedor */
 .image-container-4 {
     position: relative;
     overflow: hidden;
     height: 600px; /* Ajusta la altura según sea necesario */
 }
+
 .image-container-4 .imagen4 {
     width: 100%;
     height: auto;
@@ -131,35 +110,29 @@ contenedor principal de arriba*/
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-
 /* Estilos para la tercera imagen y texto */
-/* Nuevo contenedor para evitar interferencias */
 .section-3 {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 20px;
-    width: 200px;
-    
+    margin-left: 5%;
 }
 
 .image-container-3 {
-    flex: 1;
+    flex: 1; /* Imagen ocupará el espacio necesario */
     display: flex;
-    justify-content: start;
-    
+    justify-content: center; /* Alinear imagen a la izquierda */
 }
 
 .imagen3 {
-    width: 150%;
-    margin-left: 40%;
-    
+    width: 100%; /* Ajustar a 100% del contenedor */
     height: auto;
-    border-radius: 8px; 
+    border-radius: 8px;
+    object-fit: cover; /* Ajustar imagen sin distorsionar */
 }
 
 .text-container-3 {
-    flex: 2;
+    flex: 2; /* Texto ocupará el doble de espacio */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,8 +141,7 @@ contenedor principal de arriba*/
 }
 
 .text-content-3 {
-    margin-left: 29%;
-    margin-bottom: 27%;
+    margin-left: 0; /* Ajuste para evitar desplazamiento a la derecha */
     padding-top: 20px;
     max-width: 100%;
 }
@@ -177,14 +149,17 @@ contenedor principal de arriba*/
 .text-content-3 h3, .text-content-3 p, .text-content-3 ul {
     margin: 0 0 25px;
 }
-.text-content-3 h3{
+
+.text-content-3 h3 {
     border-bottom: 4px solid #219EBC;
     transition: transform 1.5s ease;
     width: 100px;
 }
-.text-content-3 h3:hover{
+
+.text-content-3 h3:hover {
     transform: scale(1.1);
 }
+
 .text-content-3 p {
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -199,14 +174,115 @@ contenedor principal de arriba*/
     margin: 0 0 10px;
 }
 
-.bi-check-circle-fill{
-    color:#219EBC ;
+.bi-check-circle-fill {
+    color: #219EBC;
 }
 
 
 
 
 
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/* Estilo para la sección de "Pame" */
+.text-container-5 {
+    border: 1px solid #ddd; /* Bordes del contenedor */
+    border-radius: 8px;
+    width: 300px; /* Tamaño del contenedor */
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0; /* Fondo del contenedor */
+    text-align: center;
+    margin: 20px auto; /* Centrar el contenedor horizontalmente */
+    padding: 10px; /* Espaciado interno */
+    transition: transform 0.2s ease;
+}
+
+.text-container-5:hover {
+    transform: scale(1.05); /* Efecto de escala en hover */
+}
+
+.text-container-5 h3, .text-container-5 h1 {
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+.text-container-5 h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.text-container-5 h3 {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.imagen-coach-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.imagen-coach {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Ajusta automáticamente la altura */
+    object-fit: cover; /* La imagen se ajusta al contenedor */
+    transition: opacity 1.5s ease; /* Transición suave para la opacidad */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Color del degradado oscuro */
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 1.5s ease; /* Transición suave para la opacidad */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono-instagram {
+    font-size: 2.5em;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 1.5s ease; /* Transición suave para el ícono */
+}
+
+.imagen-coach-wrapper:hover .overlay,
+.imagen-coach-wrapper:hover .icono-instagram {
+    opacity: 1; /* Mostrar el overlay y el ícono al pasar el mouse */
+}
+
+.texto {
+    padding: 10px;
+    background-color: #e0f7ff; /* Fondo azul celeste para el texto */
+    text-align: left;
+}
+
+.nombre {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.instagram {
+    color: #125688; /* Color típico de Instagram */
+    text-decoration: none;
+    margin: 0;
+}
+
+.instagram:hover {
+    text-decoration: underline;
+}
+
 
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -215,31 +291,75 @@ contenedor principal de arriba*/
 
 
 
+/* Contenedor Principal */
+.contenedor-mapa {
+    display: flex;
+    align-items: flex-start;
+    background-color: black;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    color: white; /* Color del texto para contraste */
+}
 
+/* Estilo del Contenedor del Mapa */
+.div-mapa {
+    flex: 1 1 70%; /* Ajuste del tamaño del mapa */
+    max-width: 680px;
+}
 
-/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.iframe-mapa {
+    width: 100%;
+    height: 600px;
+    border: 0;
+}
 
+/* Contenedor de Texto */
+.text-container-6 {
+    flex: 1 1 30%; /* Ajuste del tamaño del contenedor de texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* Estilo de los Elementos de Texto */
+.text-container-6 h1 {
+    margin: 0 0 10px 0;
+    font-size: 4em;
+    color: white; /* Color del texto */
+}
+
+.phone-container-6 p {
+    margin: 5px 0;
+    font-size: 2em;
+    color: white; /* Color del texto */
+}
 
 
 
 /* Responsividad */
 @media (max-width: 768px) {
-    .section, .section-3 {
+    .section,
+    .section-3 {
         flex-direction: column;
         align-items: center;
     }
 
-    .imagen2, .imagen3 {
+    .imagen2,
+    .imagen3 {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    .text-container, .text-container-3 {
+    .text-container,
+    .text-container-3 {
         align-items: center;
         text-align: center;
     }
 
-    .text-content, .text-content-3 {
+    .text-content,
+    .text-content-3 {
         margin-left: 0;
     }
 }

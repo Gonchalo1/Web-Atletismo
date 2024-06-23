@@ -30,7 +30,7 @@ function Nav() {
                 </div>
             </div>
             <div className="nav-container">
-                <div className="overlay"></div>
+                <div className="nav-overlay"></div>
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container-fluid justify-content-center">
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

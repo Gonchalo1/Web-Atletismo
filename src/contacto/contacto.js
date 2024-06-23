@@ -8,6 +8,7 @@ import Imagen2 from '../imagenes/contactoImagenes/imagenContacto2.png';
 import Imagen3 from '../imagenes/contactoImagenes/imagenContacto3.png';
 import Imagen4 from '../imagenes/contactoImagenes/imagenContacto4.png';
 import Imagen5 from '../imagenes/pame.jpeg';
+import Mapa from './mapa';
 
 function Contacto() {
     const overlayRef = useRef(null);
@@ -66,8 +67,16 @@ function Contacto() {
                         <img src={Imagen4} alt='Imagen 4' className="imagen4"/> {/* Cambiado de imagen3 a imagen4 */}
                     </div>
                 </div>
-                <div className="text-container-4"> {/* Cambiado de text-container-3 a text-container-4 */}
-                    <div className="text-content-4"> {/* Cambiado de text-content-3 a text-content-4 */}
+                
+            </div>
+
+            {/* Segundo Contenedor (Imagen 3) */}
+            <div className="section-3"> {/* Cambiado de section-4 a section-3 */}
+                <div className="image-container-3"> {/* Cambiado de image-container-4 a image-container-3 */}
+                    <img src={Imagen3} alt='Imagen 3' className="imagen3"/> {/* Cambiado de imagen4 a imagen3 */}
+                </div>
+                <div className="text-container-3"> {/* Cambiado de text-container-3 a text-container-4 */}
+                    <div className="text-content-3"> {/* Cambiado de text-content-3 a text-content-4 */}
                         <h3>Nuestra misión</h3>
                         <p>
                             Our objective for this project was to develop a comprehensive financial management platform that provided users with a centralized dashboard for managing their finances.
@@ -80,31 +89,34 @@ function Contacto() {
                         </ul>
                     </div>
                 </div>
-            </div>
-
-            {/* Segundo Contenedor (Imagen 3) */}
-            <div className="section-3"> {/* Cambiado de section-4 a section-3 */}
-                <div className="image-container-3"> {/* Cambiado de image-container-4 a image-container-3 */}
-                    <img src={Imagen3} alt='Imagen 3' className="imagen3"/> {/* Cambiado de imagen4 a imagen3 */}
                 </div>
-                <div className="text-container-3"> {/* Nuevo contenedor para la sección de "Pame" */}
-                    <h3>Pame</h3>
-                    <h1>Nuestra coach</h1>
-                    <img src={Imagen5} alt='Pame' />
-                </div>
-                <div className="text-container-3"> {/* Contenedor para el mapa y contacto */}
-                    <div>
-                        <iframe title='Mapa de contacto'></iframe>
+                <div className="text-container-5">
+                     <h1>Nuestra coach</h1>
+                <div className="imagen-coach-wrapper">
+                    <img src={Imagen5} alt='Pame' className="imagen-coach" />
+                <div className="overlay">
+                <i class="bi bi-instagram icono-instagram"></i>
                     </div>
-                    <div>
+                           </div>
+                <div className="texto">
+                    <h3>Pame</h3>
+                    <p><strong>Entrenadora de atletísmo</strong></p>
+                        </div>
+                            </div>
+            
+                <div className="contenedor-mapa"> {/* Contenedor para el mapa y contacto */}
+                    <div className='div-mapa'>
+                        <Mapa/>
+                    </div>
+                    <div className='text-container-6'>
                         <h1>Contactanos</h1>
-                        <div>
+                        <div className='phone-container-6'>
                             <div>
                                 <p>Teléfono</p>
                                 <p>+54 9 11 2278-0920</p>
-                                <i></i>
+                                <i class="bi bi-instagram "></i>
                             </div>
-                        </div>
+                      
                     </div>
                 </div>
             </div>

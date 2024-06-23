@@ -43,16 +43,15 @@
     z-index: 1; /* Capa inferior */
 }
 
-.overlay {
+.nav-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 96%;
-    background-color:  #121212;
+    background-color: #121212;
     z-index: 0; /* Capa más baja */
 }
-
 /* Estilos para los elementos de la barra de navegación */
 .navbar-nav {
     margin-right: 35vh; /* Ajusta según necesidad */
@@ -128,6 +127,9 @@
     margin-bottom: 10px;
     height: 20px;
 }
+
+
+
 @media (max-width: 991.98px) {
     .navbar-nav {
         margin-right: 0; /* Ajuste el margen derecho a 0 en dispositivos móviles */
