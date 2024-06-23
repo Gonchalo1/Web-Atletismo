@@ -4,7 +4,6 @@
 .portada {
     width: 100%;
     height: auto;
-    max-height: 500px; /* Ajustar según la altura máxima deseada */
     object-fit: cover; /* Asegura que la imagen cubra el contenedor */
 }
 
@@ -326,7 +325,7 @@
 /* Estilo de los Elementos de Texto */
 .text-container-6 h1 {
     margin: 0 0 10px 0;
-    font-size: 4em;
+    font-size: 3em;
     color: white; /* Color del texto */
 }
 
@@ -336,30 +335,194 @@
     color: white; /* Color del texto */
 }
 
+/* Estilos para pantallas mayores a 768px (ejemplo de media query) */
+@media (min-width: 768px) {
+    /*Portada, Imagen1 y 2*/
+    .portada{
+        height: 1000%;
+    }
+
+    .image-container {
+        margin-left: 0; /* Ajustes necesarios */
+        justify-content: flex-start; /* Ajustes necesarios */
+    }
+
+    .imagen1 {
+        margin-left: 0; /* Ajustes necesarios */
+        width: 100%; /* Ajustes necesarios */
+        max-width: 400px; /* Ejemplo de ajuste de tamaño máximo */
+    }
+
+    .text-container {
+        margin-left: 20px; /* Ajustes necesarios */
+        margin-bottom: 0; /* Ajustes necesarios */
+        max-width: calc(100% - 400px); /* Ejemplo de ajuste para el espacio restante */
+    }
+
+    .text-container::after {
+        left: 0; /* Ajustes necesarios */
+        width: 100%; /* Ajustes necesarios */
+    }
+
+    .imagen2 {
+        transform: translateX(0); /* Ajustes necesarios */
+        margin-top: 0; /* Ajustes necesarios */
+    }
+
+    .text-content {
+        margin-left: 0; /* Ajustes necesarios */
+    }
 
 
-/* Responsividad */
+
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+    
+}
+
+/* Estilos para pantallas menores a 768px (ejemplo de media query) */
 @media (max-width: 768px) {
-    .section,
+    /*Portada, Imagen1 y 2*/
+    .portada {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+        height: 250px; /* Ejemplo: define una altura mayor para dispositivos móviles */
+    }
+    .contacto-container{
+        gap: 10px;
+    }
+    .section {
+        flex-direction: column; /* Cambia a dirección vertical */
+        align-items: center; /* Centra verticalmente */
+    }
+
+    .image-container {
+        margin-left: 0; /* Ajustes necesarios */
+        justify-content: center; /* Ajustes necesarios */
+    }
+
+    .imagen1 {
+        margin-left: 0; /* Ajustes necesarios */
+        width: 100%; /* Ajustes necesarios */
+        max-width: 300px; /* Ejemplo de ajuste de tamaño máximo */
+    }
+
+    .text-container {
+        margin-left: 0; /* Ajustes necesarios */
+        margin-bottom: 0; /* Ajustes necesarios */
+        max-width: 100%; /* Ajustes necesarios */
+        text-align: center; /* Ajustes necesarios */
+    }
+
+    .text-container::after {
+        left: 0; /* Ajustes necesarios */
+        width: 100%; /* Ajustes necesarios */
+    }
+
+    .imagen2 {
+        transform: translateX(0); /* Ajustes necesarios */
+        margin-top: 10px; /* Ajustes necesarios */
+        height: 70px;
+    }
+
+    .text-content {
+        margin-left: 0; /* Ajustes necesarios */
+        text-align: center; /* Ajustes necesarios */
+    }
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+    /* Imagen 4*/
+    .image-container-4 {
+        /* Estilos para dispositivos móviles */
+        height: 150px; /* Ejemplo: ajusta la altura del contenedor de la imagen */
+    }
+
+    .imagen4 {
+        /* Estilos para dispositivos móviles */
+        width: 100%; /* Ejemplo: asegura que la imagen ocupe todo el ancho */
+        height: auto; /* Ajusta automáticamente la altura */
+    }
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
     .section-3 {
-        flex-direction: column;
-        align-items: center;
+        /* Estilos para dispositivos móviles */
+        flex-direction: column; /* Cambia a disposición vertical */
+        align-items: center; /* Centra verticalmente los elementos */
+        gap: 20px; /* Añade espacio entre los elementos */
     }
 
-    .imagen2,
+    .image-container-3 {
+        /* Estilos para dispositivos móviles */
+        width: 100%; /* Ajusta la imagen al ancho completo */
+        max-width: 300px; /* Ejemplo de tamaño máximo */
+        margin-bottom: 20px; /* Espacio inferior entre la imagen y el texto */
+        margin-top: 15%;
+
+    }
+
     .imagen3 {
-        width: 100%;
-        margin-bottom: 20px;
+        /* Estilos para dispositivos móviles */
+        width: 100%; /* Ajusta la imagen al ancho completo */
+        height: auto; /* Ajusta automáticamente la altura */
+        border-radius: 8px; /* Opcional: añade bordes redondeados */
+        margin-right: 20px;
     }
 
-    .text-container,
     .text-container-3 {
-        align-items: center;
-        text-align: center;
+        /* Estilos para dispositivos móviles */
+        width: 100%; /* Ajusta el texto al ancho completo */
+        max-width: 300px; /* Ejemplo de tamaño máximo */
+        text-align: center; /* Centra el texto */
     }
 
-    .text-content,
     .text-content-3 {
-        margin-left: 0;
+        /* Estilos para dispositivos móviles */
+        margin-left: 0; /* Ajuste para centrar el contenido */
     }
+
+
+
+
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    /*Seccion del iframe*/
+
+  /* Ajustes para el contenedor principal en dispositivos móviles */
+  .contenedor-mapa {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajustes para el contenedor del iframe en dispositivos móviles */
+.iframe-container {
+    order: -1; /* Cambia el orden para que el iframe esté primero */
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Ajustes para el contenedor del texto en dispositivos móviles */
+.text-container-6 {
+    padding: 20px;
+    text-align: center;
+}
+
+
 }
