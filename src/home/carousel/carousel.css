@@ -1,31 +1,49 @@
-
 #carouselExampleDark {
     max-width: 100%; /* Ancho máximo del carousel */
     margin: auto; /* Centrar el carousel horizontalmente */
     overflow: hidden; /* Ocultar contenido que se desborde */
+    height: 70vh; /* Altura del contenedor principal */
 }
 
 .carousel-inner {
-    max-height: 100%;
+    height: 100%; /* La altura interna debe ocupar el 100% del contenedor */
 }
 
 .carousel-item {
-    height: 400px; /* Altura deseada para las imágenes */
- position: initial;
+    height: 100%; /* Cada item debe ocupar el 100% de la altura del contenedor */
+    position: relative; /* Posición relativa para el contenedor de la imagen */
 }
 
 .carousel-item .carousel-img {
-    position: absolute;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Ajusta la imagen para que cubra el contenedor */
+    position: absolute; /* Posición absoluta para ajustarla dentro del contenedor */
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%; /* Ajustar el ancho al 100% del carousel */
-    height: auto; /* Mantener la proporción de la imagen */
+    left: 0;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Coloca el degradado al inicio desde la parte inferior */
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, #219EBC, transparent); /* Degradado azul de abajo hacia arriba */
+    z-index: 1; /* Coloca el degradado sobre la imagen */
+    pointer-events: none; /* Asegura que el degradado no interfiera con la interacción */
 }
 
 .carousel-caption {
     position: absolute;
+    bottom: 20px; /* Ajusta la posición del texto desde abajo */
     left: 50%;
     transform: translateX(-50%);
-    
+    width: 80%; /* Ajusta el ancho del contenedor del texto */
+    padding: 20px; /* Aumenta el padding para mejor legibilidad */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para la legibilidad */
+    color: white;
+    border-radius: 5px;
+    text-align: center; /* Centra el texto horizontalmente */
 }
