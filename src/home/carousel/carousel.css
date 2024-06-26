@@ -1,24 +1,25 @@
+/* Estilos base */
 #carouselExampleDark {
-    max-width: 100%; /* Ancho máximo del carousel */
-    margin: auto; /* Centrar el carousel horizontalmente */
-    overflow: hidden; /* Ocultar contenido que se desborde */
-    height: 70vh; /* Altura del contenedor principal */
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 65vh;
 }
 
 .carousel-inner {
-    height: 100%; /* La altura interna debe ocupar el 100% del contenedor */
+    height: 100%;
 }
 
 .carousel-item {
-    height: 100%; /* Cada item debe ocupar el 100% de la altura del contenedor */
-    position: relative; /* Posición relativa para el contenedor de la imagen */
+    height: 100%;
+    position: relative;
 }
 
 .carousel-item .carousel-img {
-    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Ajusta la imagen para que cubra el contenedor */
-    position: absolute; /* Posición absoluta para ajustarla dentro del contenedor */
+    object-fit: cover;
+    width: 100%;
+    height: 130%;
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -26,24 +27,104 @@
 .carousel-item::before {
     content: '';
     position: absolute;
-    bottom: 0; /* Coloca el degradado al inicio desde la parte inferior */
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 50%;
-    background: linear-gradient(to top, #219EBC, transparent); /* Degradado azul de abajo hacia arriba */
-    z-index: 1; /* Coloca el degradado sobre la imagen */
-    pointer-events: none; /* Asegura que el degradado no interfiera con la interacción */
+    height: 30%;
+    background: linear-gradient(to top, #219EBC, transparent);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .carousel-caption {
     position: absolute;
-    bottom: 20px; /* Ajusta la posición del texto desde abajo */
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%; /* Ajusta el ancho del contenedor del texto */
-    padding: 20px; /* Aumenta el padding para mejor legibilidad */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para la legibilidad */
+    width: 80%;
+    padding: 20px;
     color: white;
-    border-radius: 5px;
-    text-align: center; /* Centra el texto horizontalmente */
+    text-align: center;
+}
+
+.h1 {
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.h3 {
+    margin-bottom: 20px;
+}
+
+/* Personalización de los indicadores */
+.carousel-indicators.custom-indicators {
+    bottom: 20px; /* Ajusta la posición desde la parte inferior */
+    display: flex; /* Asegura que los botones se alineen correctamente */
+    justify-content: center; /* Centra los indicadores horizontalmente */
+}
+
+.carousel-indicators.custom-indicators button {
+    width: 20px; /* Ajusta el ancho */
+    height: 20px; /* Ajusta la altura */
+    margin: 0 5px; /* Espaciado entre botones */
+    border-radius: 50%; /* Hace que los indicadores sean circulares */
+    border: none; /* Quita el borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+}
+
+/* Ajuste del tamaño y estilos de los iconos de flechas */
+.carousel-control-prev,
+.carousel-control-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.carousel-control-prev i {
+    font-size: 4rem; /* Tamaño inicial del icono */
+    color: #fff; /* Color inicial del icono */
+    margin-left: 50px; /* Espacio a la izquierda */
+}
+
+.carousel-control-next i {
+    font-size: 4rem; /* Tamaño inicial del icono */
+    color: #fff; /* Color inicial del icono */
+    margin-right: 50px; /* Espacio a la derecha */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    #carouselExampleDark {
+        height: 50vh; /* Reducir altura para dispositivos móviles */
+    }
+
+    .carousel-item .carousel-img {
+        height: 100%; /* Ajustar imagen a la altura normal */
+    }
+
+    .carousel-item::before {
+        height: 20%; /* Reducir altura del gradiente */
+    }
+
+    .carousel-caption {
+        font-size: 0.8em; /* Ajustar tamaño del texto */
+    }
+
+    .carousel-control-prev i,
+    .carousel-control-next i {
+        font-size: 3rem; /* Reducir tamaño del icono */
+        margin-left: 20px; /* Ajustar margen izquierdo */
+        margin-right: 20px; /* Ajustar margen derecho */
+    }
+
+    /* Mostrar texto adicional solo en dispositivos móviles */
+    .additional-text.mobile-only {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 1.2em;
+        color: white;
+    }
 }

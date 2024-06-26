@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Ocho from '../../imagenes/8.jpeg';
 import Siete from '../../imagenes/7.jpeg';
 import './carousel.css'; // Importa el archivo CSS donde definirás los estilos
 
 function Carousel() {
   return (
+    <Link to="/noticias">
     <div>
       <div id="carouselExampleDark" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
@@ -15,9 +17,9 @@ function Carousel() {
           <div className="carousel-item active">
             <img src={Ocho} className="d-block w-100 carousel-img" alt="Descripción de la primera imagen" />
             <div className="carousel-caption d-none d-md-block">
-              <h1>         Grán tensión antes de el nacional de mayores de Pamela</h1>
-              <h3>En el Nacional de Mayores en Argentina, Pamela Maidana brilló en la pista de obstáculos al reducir
-              su marca personal en un impresionante minuto y medio. </h3>
+              <h1 className='h1'>  <strong>       Grán tensión antes de el nacional de mayores de Pamela</strong></h1>
+              <h3 className='h3'><strong>En el Nacional de Mayores en Argentina, Pamela Maidana brilló en la pista de obstáculos al reducir
+              su marca personal en un impresionante minuto y medio. </strong></h3>
             </div>
           </div>
           <div className="carousel-item">
@@ -29,15 +31,20 @@ function Carousel() {
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <i className="bi bi-arrow-left-short"></i>
           <span className="visually-hidden">Anterior</span>
         </button>
         <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <i className="bi bi-arrow-right-short"></i>
           <span className="visually-hidden">Siguiente</span>
         </button>
+
+        {/* Texto adicional en dispositivos móviles */}
+        <div className="additional-text mobile-only"><strong>Noticias</strong></div>
+        
       </div>
     </div>
+    </Link>
   );
 }
 
