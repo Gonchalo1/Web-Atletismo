@@ -1,4 +1,8 @@
 /* Asegúrate de que todos los selectores son específicos a Carousel2 */
+.div-carousel2 {
+    background-color: #219EBC;
+  }
+  
 .div-carousel2 .carousel-content {
     
     display: flex;
@@ -28,6 +32,7 @@
     object-fit: cover;
   }
   
+  
   .div-carousel2 .texto {
     padding: 10px;
     background-color: #e0f7ff;
@@ -51,10 +56,6 @@
   .div-carousel2 .instagram:hover {
     text-decoration: none;
     transform: scale(1.05);
-  }
-  
-  .div-carousel2 {
-    background-color: #1581F3;
   }
   
   .carousel2-h3{

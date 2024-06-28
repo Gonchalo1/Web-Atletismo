@@ -1,0 +1,176 @@
+/* Estilo General */
+.div-principal-profesora-pame {
+    padding: 80px;
+    position: relative; /* Necesario para que el pseudo-elemento esté posicionado en relación con este div */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 50%); /* Fondo negro en la mitad inferior */
+    z-index: 1; /* Asegura que el contenido del div esté encima del fondo */
+}
+
+/* Fondo negro en la mitad inferior del componente */
+.div-principal-profesora-pame::before {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Empieza desde la parte inferior */
+    left: 0;
+    width: 100%;
+    height: 50%; /* Cubre la mitad inferior del div */
+    background:   #219EBC;
+    z-index: -1; /* Pone el fondo detrás del contenido */
+}
+
+.equipo-h2 {
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 1; /* Mantiene el encabezado encima del fondo */
+}
+
+.equipo-grilla {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 columnas de igual ancho */
+    gap: 30px; /* Ajusta el espacio entre los elementos */
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 1400px; /* Limita el ancho máximo del contenedor principal */
+    margin-left: auto;
+    margin-right: auto; /* Centra el contenedor principal */
+    z-index: 1; /* Mantiene el contenido encima del fondo */
+}
+
+.equipo-link-contenido {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Para que el enlace ocupe todo el contenedor */
+}
+
+.equipo-contenido {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%; /* Ajusta el tamaño del contenedor al 100% de su columna */
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0; /* Fondo del contenedor */
+    transition: transform 0.2s ease;
+    margin-bottom: 20px; /* Añadir algo de margen para mayor separación */
+}
+
+.equipo-contenido:hover {
+    transform: scale(1.05); /* Efecto de escala en hover */
+}
+
+.equipo-img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 400px; /* Ajusta la altura */
+    object-fit: cover;
+}
+
+.equipo-texto {
+    padding: 20px; /* Ajusta el padding para un mayor espacio dentro del texto */
+    background-color: #e0f7ff; /* Fondo azul celeste para el texto */
+    text-align: left;
+}
+
+.equipo-nombre {
+    font-size: 1.5em; /* Aumenta el tamaño de la fuente */
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.equipo-instagram {
+    color: #125688; /* Color típico de Instagram */
+    text-decoration: none;
+    margin: 0;
+}
+
+.equipo-instagram:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* Para móviles (pantallas de hasta 425px de ancho) */
+@media (max-width: 425px) {
+    .equipo-h2 {
+        transform: translateX(-5%); /* Ajusta este valor según necesites mover el h2 */
+    }
+    .equipo-grilla {
+        grid-template-columns: 1fr; /* 1 columna */
+        gap: 15px; /* Ajusta el espacio entre los elementos para móviles */
+        justify-items: center; /* Centra los elementos */
+        max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible en móviles */
+    }
+
+    .equipo-contenido {
+        width: 100%; /* Ajusta el tamaño del contenedor para móviles */
+    }
+
+    .equipo-img {
+        height: 300px; /* Ajusta la altura para móviles */
+    }
+}
+
+/* Para tablets (pantallas de 426px a 768px de ancho) */
+@media (min-width: 426px) and (max-width: 768px) {
+    .equipo-h2 {
+        transform: translateX(-27%); /* Ajusta este valor según necesites mover el h2 */
+    }
+    .equipo-grilla {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        gap: 20px; /* Ajusta el espacio entre los elementos para tablets */
+        justify-items: center; /* Centra los elementos */
+        max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible en tablets */
+    }
+
+    .equipo-contenido {
+        width: 100%; /* Ajusta el tamaño del contenedor para tablets */
+    }
+
+    .equipo-img {
+        height: 350px; /* Ajusta la altura para tablets */
+    }
+}
+
+/* Para laptops (pantallas de 769px a 1024px de ancho) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .equipo-h2 {
+        transform: translateX(-16%); /* Ajusta este valor según necesites mover el h2 */
+    }
+    .equipo-grilla {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columnas */
+        gap: 30px; /* Mayor espacio entre elementos */
+        justify-items: center; /* Centra los elementos */
+        max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible en laptops */
+    }
+
+    .equipo-contenido {
+        width: 100%; /* Tamaño ajustado del contenedor para laptops */
+    }
+
+    .equipo-img {
+        height: 375px; /* Ajusta la altura para laptops */
+    }
+}
+
+/* Para pantallas más grandes (pantallas de más de 1024px de ancho) */
+@media (min-width: 1025px) {
+    .equipo-h2 {
+        transform: translateX(-23%); /* Ajusta este valor según necesites mover el h2 */
+    }
+    .equipo-grilla {
+        grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 columnas */
+        gap: 40px; /* Mayor espacio entre elementos */
+        justify-items: center; /* Centra los elementos */
+        max-width: 1400px; /* Aumenta el ancho máximo del contenedor principal */
+    }
+
+    .equipo-contenido {
+        width: 100%; /* Tamaño ajustado del contenedor para pantallas grandes */
+    }
+
+    .equipo-img {
+        height: 400px; /* Ajusta la altura para pantallas grandes */
+    }
+}

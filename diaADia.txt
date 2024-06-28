@@ -23,4 +23,7 @@ Seguimos trabajando con el footer, aún me quedan 2 horas y veinte minutos.
 dia8:
 Estuve terminando el footer y ajustando estilos y me di cuenta de que todo este tiempo trabajé mal
 con el css, pero estoy aprendiendo de a poco y ahora con la parte de contacto, tengo que laburar
-mucho peor lo hago parte por parte fraccionando, en vez de hacerlo todo d1. Voy progresando.||
+mucho peor lo hago parte por parte fraccionando, en vez de hacerlo todo d1. Voy progresando.
+dia9:
+He realizado el carousel 2 y la parte de precio en home, me falta menos.
+dia10:
