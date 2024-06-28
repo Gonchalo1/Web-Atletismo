@@ -6,7 +6,6 @@
     z-index: 1; /* Asegura que el contenido del div esté encima del fondo */
 }
 
-/* Fondo negro en la mitad inferior del componente */
 .div-principal-profesora-pame::before {
     content: "";
     position: absolute;
@@ -14,16 +13,17 @@
     left: 0;
     width: 100%;
     height: 50%; /* Cubre la mitad inferior del div */
-    background:   #219EBC;
+    background: #219EBC;
     z-index: -1; /* Pone el fondo detrás del contenido */
 }
 
 .equipo-h2 {
     text-align: center;
-    margin-left: 400px;
+    margin: 0; /* Elimina márgenes */
     margin-top: 20px;
     margin-bottom: 20px;
     z-index: 1; /* Mantiene el encabezado encima del fondo */
+    width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
 }
 
 .equipo-grilla {
@@ -94,7 +94,8 @@
 /* Para móviles (pantallas de hasta 425px de ancho) */
 @media (max-width: 425px) {
     .equipo-h2 {
-        transform: translateX(-5%); /* Ajusta este valor según necesites mover el h2 */
+        text-align: center; /* Asegura que esté centrado en móviles */
+        margin-left: 0; /* Elimina el margen izquierdo */
     }
     .equipo-grilla {
         grid-template-columns: 1fr; /* 1 columna */
@@ -115,7 +116,8 @@
 /* Para tablets (pantallas de 426px a 768px de ancho) */
 @media (min-width: 426px) and (max-width: 768px) {
     .equipo-h2 {
-        transform: translateX(-27%); /* Ajusta este valor según necesites mover el h2 */
+        text-align: center; /* Asegura que esté centrado en tablets */
+        margin-left: 0; /* Elimina el margen izquierdo */
     }
     .equipo-grilla {
         grid-template-columns: repeat(2, 1fr); /* 2 columnas */
@@ -136,7 +138,8 @@
 /* Para laptops (pantallas de 769px a 1024px de ancho) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .equipo-h2 {
-        transform: translateX(-16%); /* Ajusta este valor según necesites mover el h2 */
+        text-align: center; /* Asegura que esté centrado en laptops */
+        margin-left: 0; /* Elimina el margen izquierdo */
     }
     .equipo-grilla {
         grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columnas */
@@ -157,7 +160,8 @@
 /* Para pantallas más grandes (pantallas de más de 1024px de ancho) */
 @media (min-width: 1025px) {
     .equipo-h2 {
-        transform: translateX(-23%); /* Ajusta este valor según necesites mover el h2 */
+        text-align: center; /* Asegura que esté centrado en pantallas grandes */
+        margin-left: 0; /* Elimina el margen izquierdo */
     }
     .equipo-grilla {
         grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 columnas */
