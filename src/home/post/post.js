@@ -27,7 +27,7 @@ const InstagramPost = () => {
       <div className="instagram-post-outer-container">
         <div className="instagram-post-inner-container">
           <div className="instagram-post-container">
-            <h1 className='h1'>Últimos posts</h1>
+            <h1 className='h1dos'>Ultimos posts</h1>
             <blockquote className="instagram-media"
                         data-instgrm-captioned
                         data-instgrm-permalink="https://www.instagram.com/reel/C8vhsMlOFTF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="

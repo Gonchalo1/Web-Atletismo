@@ -59,9 +59,29 @@
 .carousel2-h3 {
   text-align: center;
   color: white;
+  font-family: 'Moderniz', sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+
+/* Estilos para cambiar el color de las flechas del carrusel a negro */
+
+/* Previo */
+.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000000" viewBox="0 0 16 16"><path d="M11.354 1.354a.5.5 0 0 1 0 .707L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Siguiente */
+.carousel-control-next-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000000" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+  width: 3rem;
+  height: 3rem;
+  
+}
+
 
 /* Estilos para pantallas móviles */
 @media (max-width: 768px) {
