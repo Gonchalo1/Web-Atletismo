@@ -124,5 +124,11 @@
       font-size: 1.2em;
       color: white;
     }
+  
+  /* Estilos para ocultar el h3 en pantallas de tamaño tableta */
+@media (max-width: 992px) and (min-width: 768px) {
+  #carouselExampleDark .carousel-caption .carousel-h3 {
+    display: none;
   }
+}}
   

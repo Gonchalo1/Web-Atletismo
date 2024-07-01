@@ -18,9 +18,10 @@ import Veintidos from '../imagenes/22.jpeg';
 
 function Miembros() {
     return (
-        <div className="principal">
-            <h2 className='h2'><strong>Miembros del equipo</strong></h2>
-            <div className="grilla">
+       <div className="principal">
+    <div className="contenedor">
+        <h2 className="h2"><strong>Miembros del equipo</strong></h2>
+        <div className="grilla">
                 <a href="https://instagram.com/brian_cardozo11" target="_blank" rel="noopener noreferrer" className="link-contenido">
                     <div className="contenido2">
                         <img src={Diez} alt="Brian Cardozo" className="miembro-img" />
@@ -141,6 +142,7 @@ function Miembros() {
                 </a>
             </div>
             <Footer/>
+        </div>
         </div>
     );
 }

@@ -55,7 +55,13 @@ function Nav() {
                                 </li>
                             </ul>
                             <div className="header-actions ml-lg-3">
-                                <i className="bi bi-instagram"></i>
+                            <a
+                            href="https://www.instagram.com/rprunningteam/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >
+                        <i className="bi bi-instagram" ></i>
+                            </a>
                                 <button className="btn btn-light header-button d-none d-lg-inline-block text-dark">Nuestra Profesora</button>
                             </div>
                         </div>

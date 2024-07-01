@@ -32,9 +32,8 @@ h2 {
     display: flex;
     align-items: center;
     padding: 10px;
-    margin: 20px 0;
+    margin: 10px 0;
     gap: 10px;
-    border-radius: 5px;
     border-right: 1px solid grey;
 }
 
@@ -44,10 +43,11 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    
 }
 
 .icono-calendario {
-    width: 10vh; /* Ajuste para asegurar que el icono no se deforme */
+    width: 13vh !important; /* Ajuste para asegurar que el icono no se deforme */
 }
 
 /* Estilos de Div2 */
@@ -61,6 +61,7 @@ h2 {
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-top: 100px;
 }
 
 .h4 {
@@ -72,8 +73,8 @@ h2 {
 
 .h5 {
     font-weight: bold;
+    text-align: center;
 }
-
 /* Media Queries */
 @media (max-width: 768px) {
     .contenedor-principal {
@@ -85,6 +86,7 @@ h2 {
         border: none; /* Quita las líneas en pantallas pequeñas */
     }
 
+    
     .div1 {
         flex-direction: column;
         text-align: center;
@@ -96,7 +98,26 @@ h2 {
     }
 
     .div2 {
+        display: flex; /* Línea añadida */
+        flex-direction: column; /* Línea añadida */
+        justify-content: center; /* Línea añadida */
         text-align: center;
+    }
+    .icono-texto {
+        gap: 2px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    .informacion {
+        margin-top: 20px; /* Ajusta este valor para reducir el margen superior */
+    }
+
+    .h4 {
+        font-size: 18px; /* Ajusta el tamaño de fuente si es necesario */
+    }
+
+    .h5 {
+        margin-top: none;
+        font-size: 16px; /* Ajusta el tamaño de fuente si es necesario */
     }
 }
 
@@ -116,6 +137,57 @@ h2 {
     }
 
     .div2 {
-        text-align: left;
+        display: flex; /* Línea añadida */
+        flex-direction: column; /* Línea añadida */
+        justify-content: center; /* Línea añadida */
+        text-align: center;
+    }
+
+    .icono-texto {
+        gap: 5px; /* El espacio original entre el ícono y el texto */
+    }
+
+    .informacion {
+        margin-top: 100px; /* El margen superior original */
+    }
+
+    .h4 {
+        font-size: 20px; /* Tamaño de fuente original */
+    }
+
+    .h5 {
+        font-size: 18px; /* Tamaño de fuente original */
+    }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .contenedor-flex {
+        flex-direction: row; /* Línea 101 */
+        gap: 20px; /* Línea 102 */
+        margin-top: 40px; /* Línea 103 */
+    }
+
+    .div1 {
+        flex-direction: row; /* Línea 106 */
+        align-items: center; /* Línea 107 */
+        padding: 10px; /* Línea 108 */
+        margin: 10px 0; /* Línea 109 */
+        gap: 10px; /* Línea 110 */
+        border-right: 1px solid grey; /* Línea 111 */
+    }
+
+    .icono-texto {
+        display: flex; /* Línea 114 */
+        flex-direction: column; /* Línea 115 */
+        align-items: center; /* Línea 116 */
+        gap: 5px; /* Línea 117 */
+    }
+
+    .icono-calendario {
+        width: 5vh; /* Línea 120 */
+    }
+
+    .div2 {
+        text-align: left; /* Línea 123 */
+        flex-grow: 1; /* Línea 124 */
     }
 }

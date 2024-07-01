@@ -17,7 +17,13 @@ function Footer() {
                     integrantes y obten nuestra ubicación para poder entrenar con nosotros<br/> no olvides consultar
                     los precios.
                     </p>
+                    <a
+                    href="https://www.instagram.com/rprunningteam/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <i className="bi bi-instagram"></i>
+                </a>
                 </div>
             </div>
             <div className="footer-secciones">
@@ -71,3 +77,11 @@ function Footer() {
 }
 
 export default Footer;
+
+<a
+href="https://www.instagram.com/rprunningteam/"
+target="_blank"
+rel="noopener noreferrer"
+>
+<i className="bi bi-instagram" ></i>
+</a>

@@ -10,7 +10,7 @@ import Seis from '../imagenes/6.jpeg';
 import Siete from '../imagenes/7.jpeg';
 import Ocho from '../imagenes/8.jpeg';
 import Nueve from '../imagenes/9.jpeg';
-import Calendario from '../imagenes/noticiasImagenes/calendario.png';
+import Calendario from '../imagenes/noticiasImagenes/calendario.webp';
 
 function Noticias() {
     return (

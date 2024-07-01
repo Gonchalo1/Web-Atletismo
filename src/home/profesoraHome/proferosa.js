@@ -4,9 +4,9 @@ import './profesora.css';
 
 // Imágenes
 import Catorce from '../../imagenes/pame.jpeg';
-import pame1 from '../../imagenes/homeImagenes/pame1.jpeg';
-import pame2 from '../../imagenes/homeImagenes/pame2.jpeg';
-import pame3 from '../../imagenes/homeImagenes/pame3.jpeg';
+import pame1 from '../../imagenes/homeImagenes/pame1.webp';
+import pame2 from '../../imagenes/homeImagenes/pame2.webp';
+import pame3 from '../../imagenes/homeImagenes/pame3.webp';
 
 function ProferosaHome() {
     return (

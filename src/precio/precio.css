@@ -35,11 +35,14 @@ h2 {
 }
 
 /* Enlaces */
-.precio {
-    color: black;
-    text-decoration: none;
+.precio a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto padre (por defecto, será negro) */
 }
 
+.precio a:hover {
+    text-decoration: none; /* Elimina el subrayado al pasar el ratón por encima */
+}
 /* Estilos de Div1Precio */
 .div1Precio {
     display: flex;
@@ -63,6 +66,7 @@ h2 {
 .div2Precio {
     text-align: center;
     flex-grow: 1;
+    
 }
 
 /* Información de Días */
@@ -70,6 +74,9 @@ h2 {
     display: flex;
     align-items: center;
     gap: 5px;
+    justify-content: center; /* Asegura la alineación central */
+    text-align: center; /* Asegura la alineación central */
+    width: 100%; /* Asegura el ancho completo */
 }
 
 /* Estilos de Texto */
@@ -78,6 +85,8 @@ h2 {
     font-size: 30px;
     font-weight: bold;
     line-height: 1.5;
+    margin-top: 60px; /* Ajusta este valor según sea necesario */
+    text-align: center; /* Asegura el alineado central */
 }
 
 .bi-currency-dollar {
@@ -110,21 +119,38 @@ h2 {
     }
 
     .div1Precio {
-        flex-direction: column;
-        text-align: center;
-        border-right: none;
+        flex-direction: row; /* Cambia a fila */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        border-right: none; /* Quita borde */
     }
 
-    .div1Precio img {
-        width: 100%;
+    .div1Precio i {
+        margin-bottom: 0; /* Quita margen inferior */
+        margin-right: 10px; /* Espacio entre icono y precio */
     }
 
     .div2Precio {
         text-align: center;
+        border-bottom: 1px solid ; /* Añade la línea gris */
+        padding-bottom: 10px; /* Ajusta el padding para evitar superposición con el borde */
+    }
+
+    .precioEnSi {
+        flex-direction: row; /* Alinea signo de dólar y precio */
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+    }
+
+    .informacionDias {
+        justify-content: center; /* Asegura la alineación central */
+        text-align: center; /* Asegura la alineación central */
+        width: 100%; /* Asegura el ancho completo */
     }
 
     .h4Dias {
         text-align: center;
+        margin-top: 10px; /* Ajusta este valor según sea necesario */
     }
 }
 
@@ -142,6 +168,10 @@ h2 {
     }
 
     .div2Precio {
+        text-align: left; /* Ajusta el alineado en pantallas grandes */
+    }
+
+    .informacionDias {
         text-align: left; /* Ajusta el alineado en pantallas grandes */
     }
 }

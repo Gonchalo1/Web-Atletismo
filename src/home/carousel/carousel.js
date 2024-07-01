@@ -18,7 +18,7 @@ function Carousel() {
             <img src={Ocho} className="d-block w-100 carousel-img" alt="Descripción de la primera imagen" />
             <div className="carousel-caption d-none d-md-block">
               <h1 className='h1'>  <strong>       Grán tensión antes de el nacional de mayores de Pamela</strong></h1>
-              <h3 className='h3'><strong>En el Nacional de Mayores en Argentina, Pamela Maidana brilló en la pista de obstáculos al reducir
+              <h3 className='carousel-h3 h3'><strong>En el Nacional de Mayores en Argentina, Pamela Maidana brilló en la pista de obstáculos al reducir
               su marca personal en un impresionante minuto y medio. </strong></h3>
             </div>
           </div>

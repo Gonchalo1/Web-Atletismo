@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
+
 import './contacto.css';
 import Footer from '../footer/footer';
 
@@ -11,6 +13,9 @@ import Imagen5 from '../imagenes/pame.jpeg';
 import Mapa from './mapa';
 
 function Contacto() {
+
+
+
     const overlayRef = useRef(null);
 
     useEffect(() => {
@@ -64,7 +69,9 @@ function Contacto() {
             <div className="section-4"> {/* Cambiado de section-3 a section-4 */}
                 <div className="image-container-4"> {/* Cambiado de image-container-3 a image-container-4 */}
                     <div ref={overlayRef} className="image-overlay">
-                        <img src={Imagen4} alt='Imagen 4' className="imagen4"/> {/* Cambiado de imagen3 a imagen4 */}
+                    <Link to="/precio">
+                        <img src={Imagen4} alt='Imagen 4' className="imagen4"/>
+                    </Link>
                     </div>
                 </div>
                 
@@ -79,8 +86,10 @@ function Contacto() {
                     <div className="text-content-3"> {/* Cambiado de text-content-3 a text-content-4 */}
                         <h3>Nuestra misión</h3>
                         <p>
-                            Our objective for this project was to develop a comprehensive financial management platform that provided users with a centralized dashboard for managing their finances.
-                            <br/>Nuestra misión grupal es:
+                        Nuestra misión en RP es desarrollar un nuevo estilo de vida a través del running, forjando 
+                        disciplina deportiva y mejorando la salud de nuestros miembros. Nos comprometemos a proporcionar 
+                        entrenamientos de alta calidad y mantenernos al tanto de los últimos eventos deportivos.
+                            
                         </p>
                         <ul className="mission-list">
                             <li className="mission-item"><i className="bi bi-check-circle-fill"></i><strong> Desarrollar un nuevo estilo de vida</strong></li>
@@ -115,7 +124,7 @@ function Contacto() {
                             <div>
                                 <p>Teléfono</p>
                                 <p>+54 9 11 2278-0920</p>
-                                <i class="bi bi-instagram "></i>
+                                
                             </div>
                       
                     </div>
