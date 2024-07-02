@@ -1,4 +1,6 @@
 import React from "react";
+import '../App.css'
+import Footer from "../footer/footer";
 
 
 
@@ -9,6 +11,10 @@ function NuestraProfesora(){
             <div>
                 
             </div>
+            <Footer/>
         </div>
     )
 }
+
+
+export default NuestraProfesora;

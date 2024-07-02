@@ -19,6 +19,7 @@ import NoticiaEnSi3 from './noticias/noticiaEnSi/noticiaEnSi3';
 import NoticiaEnSi4 from './noticias/noticiaEnSi/noticiaEnSi4';
 import NoticiaEnSi5 from './noticias/noticiaEnSi/noticiaEnSi5';
 import NoticiaEnSi6 from './noticias/noticiaEnSi/noticiaEnSi6';
+import NuestraProfesora from './nuestraProfesora/nuestraProfesora';
 
 
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/noticia/4" element={<NoticiaEnSi4 />} />
           <Route path="/noticia/5" element={<NoticiaEnSi5 />} />
           <Route path="/noticia/6" element={<NoticiaEnSi6 />} />
+          <Route path="/nuestraProfesora" element={<NuestraProfesora />} />
         </Routes>
         
       </div>

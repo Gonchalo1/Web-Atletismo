@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../imagenes/logo.png';
 import Telefono from '../imagenes/telefono.png';
-import './footer.css';
+import '../App.css';
 
 function Footer() {
     return (

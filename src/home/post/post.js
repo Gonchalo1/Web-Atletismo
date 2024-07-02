@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './post.css';
+import '../../App.css';
 
 
 const InstagramPost = () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Ocho from '../../imagenes/8.jpeg';
 import Siete from '../../imagenes/7.jpeg';
-import './carousel.css'; // Importa el archivo CSS donde definirás los estilos
+import '../../App.css'; // Importa el archivo CSS donde definirás los estilos
 
 function Carousel() {
   return (

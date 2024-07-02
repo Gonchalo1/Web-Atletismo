@@ -12,7 +12,7 @@ function Home() {
   return (
     <div className="home-principal">
       <Carousel />
-      <Link to="/precios" className="home2-link">
+      <Link to="/precio" className="home2-link">
         <div className='home2'>
           <div className='home2-h3'>
             <h3>Inscripciones Online</h3>

@@ -1,6 +1,6 @@
 // NoticiaEnSi1.js
 import React from 'react';
-import './noticiaEnSi.css';
+import '../../App.css';
 import { useNavigate } from 'react-router-dom'; 
 import Siete from '../../imagenes/7.jpeg'
 

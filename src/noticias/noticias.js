@@ -1,6 +1,6 @@
 // src/components/Noticias/Noticias.js
 import React from 'react';
-import './noticias.css';
+import '../App.css';
 import Footer from '../footer/footer';
 import { Link } from 'react-router-dom';
 

@@ -89,6 +89,7 @@
 .header-actions {
     display: flex;
     align-items: center;
+
 }
 
 .header-button {
@@ -97,16 +98,8 @@
     height: 60px;
 }
 .header-button:hover {
-    content: "";
-    position: absolute;
     border-radius: 6px;
-    width: 0;
-    height: 0;
     background-color: #dcdcdc;
-    transition: .5s cubic-bezier(.5,-.5,.25,1.5);
-    top: 6px;
-    left: 6px;
-    z-index: -1;
 }
 
 .navbar-toggler {
@@ -130,15 +123,24 @@
 
 
 
+ .navbar-toggler-icon-custom {
+    color: #FFFFFF;
+    
+ }
+
 @media (max-width: 991.98px) {
     .navbar-nav {
         margin-right: 0; /* Ajuste el margen derecho a 0 en dispositivos móviles */
     }
+
+
+/* Icono de hamburguesa en estado activo */
+
+
+.header-actions {
+    margin-bottom: 10px;
+    
 }
 
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after,
-.navbar-toggler-icon span {
-    display: block;
-    content: '';
+
 }

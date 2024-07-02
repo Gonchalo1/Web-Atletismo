@@ -1,5 +1,5 @@
 import React from 'react';
-import './miembros.css';
+import '../App.css';
 import Footer from '../footer/footer';
 
 import Diez from '../imagenes/10.jpeg'; 

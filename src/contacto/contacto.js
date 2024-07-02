@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-import './contacto.css';
+import '../App.css';
 import Footer from '../footer/footer';
 
 import Portada from '../imagenes/contactoImagenes/portadaContacto.png';

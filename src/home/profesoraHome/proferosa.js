@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './profesora.css';
+import '../../App.css';
 
 // Imágenes
 import Catorce from '../../imagenes/pame.jpeg';

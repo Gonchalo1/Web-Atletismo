@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../imagenes/logo.png';
-import './nav.css';
+import '../App.css';
 
 function Nav() {
     return (
@@ -34,7 +34,7 @@ function Nav() {
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container-fluid justify-content-center">
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
+                        <i className="bi bi-list navbar-toggler-icon-custom"></i>
                         </button>
                         <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                             <ul className="navbar-nav mb-2 mb-lg-0">
@@ -62,7 +62,9 @@ function Nav() {
                             >
                         <i className="bi bi-instagram" ></i>
                             </a>
+                            <Link to="nuestraProfesora">
                                 <button className="btn btn-light header-button d-none d-lg-inline-block text-dark">Nuestra Profesora</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
