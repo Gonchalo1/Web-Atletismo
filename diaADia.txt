@@ -26,4 +26,6 @@ con el css, pero estoy aprendiendo de a poco y ahora con la parte de contacto, t
 mucho peor lo hago parte por parte fraccionando, en vez de hacerlo todo d1. Voy progresando.
 dia9:
 He realizado el carousel 2 y la parte de precio en home, me falta menos.
-dia10:
+dia NoseCuanto:
+Ya es la 4ta semana y estoy por terminar, porque debugié mucho código y me falta solo 1 sección, y
+termino yupi.
