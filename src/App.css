@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Moderniz:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Tiny5&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 
 
 /*NAV*/
@@ -2024,3 +2024,30 @@ h2 {
 
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+  .carousel-caption-left {
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Ajusta esta distancia según tus necesidades */
+    transform: translateY(-50%);
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: white; /* Cambia el color según tu preferencia */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente opcional para mejor visibilidad */
+    padding: 10px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    font-family: 'Anton SC', sans-serif;
+}
+  
+  
+  .carousel-image {
+    max-height: 800px; /* Define el máximo de altura que deseas */
+    height: auto; /* Permite que la imagen mantenga su proporción de aspecto */
+    
+  }
+  
+  .carousel-indicators .active {
+    background-color: #125688;
+  }
