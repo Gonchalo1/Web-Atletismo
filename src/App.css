@@ -2026,7 +2026,7 @@ h2 {
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
-
+/*Nuestra Profesora*/
 
   .carousel-caption-left {
     position: absolute;
@@ -2051,3 +2051,79 @@ h2 {
   .carousel-indicators .active {
     background-color: #125688;
   }
+/* src/components/carousel2/carousel2.css */
+
+
+  /*Carusel 2 Nuestra Profesora*/
+/* src/components/carousel2/carousel2.css */
+
+.carousel2-wrapper {
+    padding: 20px;
+}
+
+#carouselExampleDark2 {
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.carousel2-inner {
+    width: 100%;
+}
+
+.carousel2-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Ajusta la altura según lo necesites */
+    background-color: black; /* Fondo negro para cada diapositiva del carrusel */
+    color: white; /* Color del texto */
+}
+
+.carousel2-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.adjective2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white; /* Color del texto */
+}
+
+.adjective2 i {
+    font-size: 2rem; /* Tamaño del ícono */
+    margin-bottom: 10px; /* Espacio entre el ícono y el texto */
+    pointer-events: none; /* Desactiva la clicabilidad */
+}
+
+.adjective2 span {
+    font-size: 1.5rem; /* Tamaño del texto */
+}
+
+.carousel2-indicators button {
+    background-color: white; /* Botones indicadores blancos */
+    border: none;
+}
+
+.carousel2-indicators .active {
+    background-color: grey; /* Color del botón indicador activo */
+}
+
+/* Estilos para los controles de navegación */
+.carousel2-control-prev-icon,
+.carousel2-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semitransparente para los controles */
+    border-radius: 50%; /* Controles redondeados */
+}
+
+.carousel2-control-prev,
+.carousel2-control-next {
+    width: 5%;
+}
