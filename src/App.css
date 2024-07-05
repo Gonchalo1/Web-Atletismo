@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Moderniz:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Tiny5&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 /*NAV*/
 
@@ -1281,6 +1281,13 @@ h2 {
 }
 
 /* Sección para lo debajo de la portada */
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Contenedor de la primera imagen */
+
+/* Sección para lo debajo de la portada */
 .section {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
@@ -1289,9 +1296,6 @@ h2 {
     max-width: 1200px;
 }
 
-/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* Contenedor de la primera imagen */
 .image-container {
     flex: 1;
     display: flex;
@@ -2055,30 +2059,37 @@ h2 {
 
 
   /*Carusel 2 Nuestra Profesora*/
-/* src/components/carousel2/carousel2.css */
+  /* src/components/carousel2/carousel2.css */
 
 .carousel2-wrapper {
-    padding: 20px;
+    width: 100vw; /* Ancho completo de la ventana */
+    height: 15vh; /* 50% de la altura de la ventana */
+    padding: 0;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
 }
 
 #carouselExampleDark2 {
     width: 100%;
-    max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
-    margin: 0 auto; /* Centra el carrusel horizontalmente */
-    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    height: 100%;
 }
 
 .carousel2-inner {
     width: 100%;
+    height: 100%; /* Ocupa toda la altura del contenedor */
 }
 
 .carousel2-item {
-    display: flex;
+    display: none; /* Oculta todas las diapositivas por defecto */
     justify-content: center;
     align-items: center;
-    height: 300px; /* Ajusta la altura según lo necesites */
+    width: 100%;
+    height: 100%; /* Ocupa toda la altura del contenedor */
     background-color: black; /* Fondo negro para cada diapositiva del carrusel */
     color: white; /* Color del texto */
+}
+
+.carousel2-item.active {
+    display: flex; /* Solo muestra la diapositiva activa */
 }
 
 .carousel2-content {
@@ -2086,7 +2097,7 @@ h2 {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100%; /* Ocupa toda la altura del contenedor */
 }
 
 .adjective2 {
@@ -2094,20 +2105,30 @@ h2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: sans-serif;
     color: white; /* Color del texto */
-}
-
-.adjective2 i {
-    font-size: 2rem; /* Tamaño del ícono */
-    margin-bottom: 10px; /* Espacio entre el ícono y el texto */
-    pointer-events: none; /* Desactiva la clicabilidad */
+    font-family: sans-serif;
 }
 
 .adjective2 span {
-    font-size: 1.5rem; /* Tamaño del texto */
+    font-size: 3.5rem; /* Tamaño del texto ajustado */
+}
+
+.carousel2-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: auto;
 }
 
 .carousel2-indicators button {
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+    border-radius: 50%;
     background-color: white; /* Botones indicadores blancos */
     border: none;
 }
@@ -2116,14 +2137,111 @@ h2 {
     background-color: grey; /* Color del botón indicador activo */
 }
 
-/* Estilos para los controles de navegación */
-.carousel2-control-prev-icon,
-.carousel2-control-next-icon {
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semitransparente para los controles */
-    border-radius: 50%; /* Controles redondeados */
+/*Elemento 3 Nuestra Profesora*/
+
+/* Estilos para Elemento3 */
+/* Estilos para Elemento3 */
+
+.section-elemento3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%; /* Ajusta el máximo al 100% para ocupar toda la ventana */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 50px 20px; /* Ajusta el relleno para separar del borde de la ventana */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho */
 }
 
-.carousel2-control-prev,
-.carousel2-control-next {
-    width: 5%;
+.image-container-elemento3 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen1-elemento3 {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    max-width: 100%; /* Asegúrate de que no exceda el tamaño original */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 8px; /* Opcional: Añadir bordes redondeados */
+}
+
+.text-container-elemento3 {
+    flex: 1; /* Ajusta el texto para ocupar el mismo espacio que la imagen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px; /* Ajusta el relleno para separar del borde de la ventana */
+}
+
+.text-content-elemento3 {
+    /* Estilos específicos para el contenido de texto en Elemento3 */
+    color: #fff; /* Texto blanco */
+}
+
+/*Elemento 4*/
+/* Estilos para Elemento4 */
+
+.section-elemento4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #000; /* Fondo negro si se requiere */
+    padding: 20px; /* Espaciado alrededor de la sección */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho */
+}
+
+.image-container-elemento4 {
+    width: 90%;
+    max-width: 100%; /* Asegúrate de que ocupe todo el ancho de la ventana */
+    position: relative; /* Necesario para el posicionamiento del texto */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.image-overlay-elemento4 {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imagen4 {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    max-width: 100%; /* Asegura que no exceda el tamaño original */
+    border-radius: 8px; /* Opcional: Añadir bordes redondeados */
+    transition: transform 0.3s ease, filter 2s ease; /* Suaviza las transiciones de transformación y filtro */
+}
+
+.image-container-elemento4:hover .imagen4 {
+    transform: scale(0.9); /* Reduce el tamaño de la imagen */
+    filter: brightness(0.5); /* Aplica el degradado a la imagen */
+}
+
+.instagram-link-elemento4 {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición al centro */
+    background: rgba(0, 0, 0, 0.9); /* Fondo negro más fuerte */
+    color: white; /* Texto blanco */
+    padding: 20px 40px; /* Más espacio alrededor del texto */
+    border-radius: 12px; /* Bordes redondeados */
+    text-decoration: none;
+    font-size: 1.8rem; /* Tamaño de fuente más grande */
+    font-family: 'Great Vibes', cursive; /* Fuente Great Vibes */
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 2s, transform 0.3s; /* Suaviza la aparición */
+    text-align: center; /* Centra el texto */
+}
+
+.image-container-elemento4:hover .instagram-link-elemento4 {
+    opacity: 1; /* Muestra el texto al pasar el mouse */
 }
