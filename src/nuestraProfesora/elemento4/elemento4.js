@@ -1,6 +1,6 @@
 import React from "react";
 import '../../App.css';
-import Fondo from '../../imagenes/nuestraProfesora/fondoPame3.png';
+import Fondo from '../../imagenes/nuestraProfesora/elemento4.jpg';
 
 function Elemento4() {
   return (

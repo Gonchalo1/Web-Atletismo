@@ -2039,7 +2039,6 @@ h2 {
     transform: translateY(-50%);
     text-align: left; /* Alinea el texto a la izquierda */
     color: white; /* Cambia el color según tu preferencia */
-    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente opcional para mejor visibilidad */
     padding: 10px; /* Espaciado alrededor del texto */
     border-radius: 5px; /* Bordes redondeados opcionales */
     font-family: 'Anton SC', sans-serif;
@@ -2136,10 +2135,118 @@ h2 {
 .carousel2-indicators .active {
     background-color: grey; /* Color del botón indicador activo */
 }
+/*Carusel 2 Nuestra Profesora*/
+/* src/components/carousel2/carousel2.css */
+
+.carousel2-wrapper {
+    width: 100vw; /* Ancho completo de la ventana */
+    height: 15vh; /* Altura ajustada */
+    padding: 0;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+#carouselExampleDark2 {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel2-inner {
+    width: 100%;
+    height: 100%; /* Ocupa toda la altura del contenedor */
+}
+
+.carousel2-item {
+    display: none; /* Oculta todas las diapositivas por defecto */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Ocupa toda la altura del contenedor */
+    background-color: black; /* Fondo negro para cada diapositiva del carrusel */
+    color: white; /* Color del texto */
+}
+
+.carousel2-item.active {
+    display: flex; /* Solo muestra la diapositiva activa */
+}
+
+.carousel2-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Ocupa toda la altura del contenedor */
+}
+
+.adjective2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    color: white; /* Color del texto */
+    font-family: sans-serif;
+}
+
+.adjective2 span {
+    font-size: 3.5rem; /* Tamaño del texto ajustado */
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Pantallas pequeñas (tabletas y teléfonos en orientación horizontal) */
+@media (max-width: 1024px) {
+    .carousel2-wrapper {
+        height: 20vh; /* Ajusta la altura del carrusel */
+    }
+
+    .adjective2 span {
+        font-size: 3rem; /* Ajusta el tamaño del texto */
+    }
+}
+
+/* Pantallas medianas (teléfonos en orientación vertical) */
+@media (max-width: 768px) {
+    .carousel2-wrapper {
+        height: 25vh; /* Ajusta la altura del carrusel */
+    }
+
+    .adjective2 span {
+        font-size: 2.5rem; /* Ajusta el tamaño del texto */
+    }
+
+    .carousel2-content {
+        flex-direction: column; /* Cambia la dirección del contenido */
+    }
+
+    .adjective2 {
+        margin: 10px 0; /* Ajusta el margen para espaciar los elementos */
+    }
+}
+
+/* Pantallas muy pequeñas (teléfonos pequeños) */
+@media (max-width: 576px) {
+    .carousel2-wrapper {
+        height: 30vh; /* Ajusta la altura del carrusel */
+    }
+
+    .adjective2 span {
+        font-size: 2rem; /* Ajusta el tamaño del texto */
+    }
+
+    .carousel2-content {
+        flex-direction: column; /* Mantiene la dirección del contenido en columna */
+    }
+
+    .adjective2 {
+        margin: 5px 0; /* Ajusta el margen para espaciar los elementos */
+    }
+}
+
 
 /*Elemento 3 Nuestra Profesora*/
 
-/* Estilos para Elemento3 */
+/*Elemento 3 Nuestra Profesora*/
+
 /* Estilos para Elemento3 */
 
 .section-elemento3 {
@@ -2179,8 +2286,94 @@ h2 {
 }
 
 .text-content-elemento3 {
-    /* Estilos específicos para el contenido de texto en Elemento3 */
     color: #fff; /* Texto blanco */
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+
+/* Pantallas pequeñas (tabletas y teléfonos en orientación horizontal) */
+@media (max-width: 1024px) {
+    .section-elemento3 {
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: center; /* Centra los elementos verticalmente */
+        padding: 30px 15px; /* Reduce el relleno */
+    }
+
+    .image-container-elemento3 {
+        margin-bottom: 20px; /* Añade un margen inferior para separar la imagen del texto */
+    }
+
+    .imagen1-elemento3 {
+        max-width: 80%; /* Reduce el ancho máximo de la imagen */
+    }
+
+    .text-container-elemento3 {
+        padding: 0 10px; /* Reduce el relleno lateral */
+        text-align: center; /* Centra el texto */
+    }
+
+    .text-content-elemento3 h1 {
+        font-size: 1.5rem; /* Reduce el tamaño de la cabecera */
+    }
+
+    .text-content-elemento3 p {
+        font-size: 1rem; /* Reduce el tamaño del párrafo */
+    }
+}
+
+/* Pantallas medianas (teléfonos en orientación vertical) */
+@media (max-width: 768px) {
+    .section-elemento3 {
+        padding: 20px 10px; /* Reduce aún más el relleno */
+    }
+
+    .imagen1-elemento3 {
+        max-width: 70%; /* Reduce aún más el ancho máximo de la imagen */
+    }
+
+    .text-container-elemento3 {
+        padding: 0 5px; /* Reduce el relleno lateral */
+    }
+
+    .text-content-elemento3 h1 {
+        font-size: 1.2rem; /* Reduce el tamaño de la cabecera */
+    }
+
+    .text-content-elemento3 p {
+        font-size: 0.9rem; /* Reduce el tamaño del párrafo */
+    }
+}
+
+/* Pantallas muy pequeñas (teléfonos pequeños) */
+@media (max-width: 576px) {
+    .section-elemento3 {
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: center; /* Centra los elementos */
+        padding: 15px 5px; /* Ajusta el relleno para separarse de los bordes */
+    }
+
+    .image-container-elemento3 {
+        order: -1; /* Coloca la imagen antes que el texto */
+        margin-bottom: 10px; /* Añade un margen inferior para separar la imagen del texto */
+        max-width: 100%;
+    }
+
+    .imagen1-elemento3 {
+        max-width: 90%; /* Reduce el ancho máximo de la imagen */
+    }
+
+    .text-container-elemento3 {
+        padding: 0 5px; /* Ajusta el relleno */
+        text-align: center; /* Centra el texto */
+    }
+
+    .text-content-elemento3 h1 {
+        font-size: 1rem; /* Reduce el tamaño de la cabecera */
+    }
+
+    .text-content-elemento3 p {
+        font-size: 0.8rem; /* Reduce el tamaño del párrafo */
+    }
 }
 
 /*Elemento 4*/
@@ -2197,7 +2390,7 @@ h2 {
 }
 
 .image-container-elemento4 {
-    width: 90%;
+    width: 70%;
     max-width: 100%; /* Asegúrate de que ocupe todo el ancho de la ventana */
     position: relative; /* Necesario para el posicionamiento del texto */
     overflow: hidden; /* Oculta cualquier desbordamiento */
@@ -2245,3 +2438,189 @@ h2 {
 .image-container-elemento4:hover .instagram-link-elemento4 {
     opacity: 1; /* Muestra el texto al pasar el mouse */
 }
+
+
+
+/*ELEMENTO 5*/
+
+/* Estilos para Elemento5 */
+
+.section-elemento5 {
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  /* Título */
+  .titulo-elemento-5 h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Contenedor de videos */
+  .videos-elemento-5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  /* Contenedor individual de video */
+  .video-contenedor {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el contenido al inicio */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+  
+  /* Estilo de los videos */
+  .video-contenedor video {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Estilo de las imágenes */
+  .video-contenedor img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Texto descriptivo */
+  .descripcion-video {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+  
+  /* Media queries para ajustar la grilla en diferentes tamaños */
+  
+  /* Tabletas y pantallas más pequeñas */
+  @media (max-width: 1024px) {
+    .videos-elemento-5 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  
+    .titulo-elemento-5 h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Teléfonos móviles */
+  @media (max-width: 768px) {
+    .videos-elemento-5 {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .titulo-elemento-5 h2 {
+      font-size: 1.5rem;
+    }
+  
+    .video-contenedor {
+      max-width: 100%;
+      align-items: center; /* Centra el contenido en dispositivos móviles */
+    }
+  
+    .descripcion-video {
+      text-align: center; /* Alinea el texto al centro en móviles */
+    }
+  }
+  
+
+  /* ELEMENTO 6 */
+
+.section-elemento6 {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #000; /* Fondo gris claro */
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho */
+  }
+  
+  /* Estilo para la imagen */
+  .imagen-elemento6 {
+    width: 100%;
+    max-width: 950px; /* Ancho máximo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease; /* Efecto de transición para el hover */
+    border: 2px solid white;
+  }
+  
+  .imagen-elemento6:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al hacer hover */
+  }
+  
+  /* Media queries */
+  
+  /* Tabletas y pantallas más pequeñas */
+  @media (max-width: 1024px) {
+    .section-elemento6 {
+      padding: 30px 15px;
+    }
+  
+    .imagen-elemento6 {
+      max-width: 600px; /* Reduce el ancho máximo */
+    }
+  }
+  
+  /* Teléfonos móviles */
+  @media (max-width: 768px) {
+    .section-elemento6 {
+      padding: 20px 10px;
+    }
+  
+    .imagen-elemento6 {
+      max-width: 100%; /* Usa el ancho completo del contenedor */
+      border-radius: 0; /* Quita los bordes redondeados para mejor adaptación */
+    }
+  }
+  
+
+  /*Elemento7*/
+  /* Estilo para Elemento7 */
+.section-elemento7 {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .image-container-elemento7 {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+    
+  }
+  
+  .image-overlay-elemento7 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .imagen7 {
+    width: 100%;
+    height: auto;
+    transition: transform 0.1s ease-out;
+  }
+  
