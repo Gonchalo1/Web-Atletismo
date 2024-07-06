@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import '../../App.css';
-import Imagen from '../../imagenes/nuestraProfesora/elemento7.jpg'; // Reemplaza con la imagen que desees usar
+import Imagen from '../../imagenes/nuestraProfesora/elemento7.png'; // Reemplaza con la imagen que desees usar
 
 function Elemento7() {
   const overlayRef = useRef(null);
