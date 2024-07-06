@@ -1,5 +1,4 @@
 // src/components/Carousel1.js
-
 import React from "react";
 import Carousel from '../../imagenes/nuestraProfesora/carousel1.JPG';
 import Carousel2 from '../../imagenes/nuestraProfesora/carousel2.webp';

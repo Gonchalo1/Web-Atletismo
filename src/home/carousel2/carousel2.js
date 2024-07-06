@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import '../../App.css';
+
 import Miembro1 from '../../imagenes/10.jpeg'; 
 import Miembro2 from '../../imagenes/11.jpeg';
 import Miembro3 from '../../imagenes/12.jpeg';

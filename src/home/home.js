@@ -4,6 +4,7 @@ import Carousel from './carousel/carousel';
 import Footer from '../footer/footer';
 import Carousel2 from './carousel2/carousel2';
 import PrecioFondo from '../imagenes/homeImagenes/Precio.png';
+
 import './home.css';
 import ProfesoraHome from './profesoraHome/proferosa';
 import InstagramPost from './post/post';
@@ -24,10 +25,7 @@ function Home() {
       </Link>
       <Carousel2 />
       <ProfesoraHome/>
-      
-        <InstagramPost />
-      
-      
+      <InstagramPost />
       <Footer />
     </div>
   );

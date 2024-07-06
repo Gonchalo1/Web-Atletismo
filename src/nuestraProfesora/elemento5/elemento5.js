@@ -1,8 +1,8 @@
 import React from "react";
 import '../../App.css';
-import Thumbnail1 from '../../imagenes/11.jpeg'; // Imagen de previsualización 1
-import Thumbnail2 from '../../imagenes/pame.jpeg'; // Imagen de previsualización 2
-import Thumbnail3 from '../../imagenes/1.jpeg'; // Imagen de previsualización 3
+import Thumbnail1 from '../../imagenes/11.jpeg';
+import Thumbnail2 from '../../imagenes/pame.jpeg';
+import Thumbnail3 from '../../imagenes/1.jpeg';
 
 const images = [
   {

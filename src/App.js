@@ -28,7 +28,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Nav /> {/* Esto hará que el nav se renderice en todas las páginas */}
+        <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/precio" element={<Precio />} />
@@ -43,7 +43,6 @@ function App() {
           <Route path="/noticia/6" element={<NoticiaEnSi6 />} />
           <Route path="/nuestraProfesora" element={<NuestraProfesora />} />
         </Routes>
-        
       </div>
     </Router>
   );

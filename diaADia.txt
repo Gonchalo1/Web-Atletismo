@@ -29,3 +29,5 @@ He realizado el carousel 2 y la parte de precio en home, me falta menos.
 dia NoseCuanto:
 Ya es la 4ta semana y estoy por terminar, porque debugié mucho código y me falta solo 1 sección, y
 termino yupi.
+dia10-11-12:
+He terminado cási todo, nomas me falta poner datos reales y debugear código y ya.
