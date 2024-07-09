@@ -2,8 +2,8 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import '../../App.css';
 
-import Miembro1 from '../../imagenes/miembros10.jpeg'; 
-import Miembro2 from '../../imagenes/miembros11.jpeg';
+import Miembro1 from '../../imagenes/miembros11.jpeg'; 
+import Miembro2 from '../../imagenes/miembros10.jpeg';
 import Miembro3 from '../../imagenes/miembros12.jpeg';
 import Miembro4 from '../../imagenes/miembros13.jpeg'; 
 import Miembro5 from '../../imagenes/miembros14.jpeg';
@@ -25,21 +25,21 @@ function Carousel2() {
                 </div>
               </div>
             </a>
-            <a href="https://instagram.com/otro_miembro" target="_blank" rel="noopener noreferrer" className="link-contenido">
+            <a href="https://www.instagram.com/marcelodietrich55/" target="_blank" rel="noopener noreferrer" className="link-contenido">
               <div className="contenido2">
                 <img src={Miembro2} alt="Otro Miembro" className="miembro-img" />
                 <div className="texto">
-                  <p className="nombre">Otro Miembro</p>
-                  <p className="instagram">@otro_miembro</p>
+                  <p className="nombre">Marcelo Dietrich</p>
+                  <p className="instagram">@marcelodietrich55</p>
                 </div>
               </div>
             </a>
-            <a href="https://instagram.com/tercer_miembro" target="_blank" rel="noopener noreferrer" className="link-contenido">
+            <a href="https://www.instagram.com/carnegretti/" target="_blank" rel="noopener noreferrer" className="link-contenido">
               <div className="contenido2">
                 <img src={Miembro3} alt="Tercer Miembro" className="miembro-img" />
                 <div className="texto">
-                  <p className="nombre">Tercer Miembro</p>
-                  <p className="instagram">@tercer_miembro</p>
+                  <p className="nombre">Carla</p>
+                  <p className="instagram">@carnegretti</p>
                 </div>
               </div>
             </a>
@@ -47,30 +47,30 @@ function Carousel2() {
         </Carousel.Item>
         <Carousel.Item>
           <div className="carousel-content">
-            <a href="https://instagram.com/cuarto_miembro" target="_blank" rel="noopener noreferrer" className="link-contenido">
+            <a href="https://www.instagram.com/majo_dida08/" target="_blank" rel="noopener noreferrer" className="link-contenido">
               <div className="contenido2">
                 <img src={Miembro4} alt="Cuarto Miembro" className="miembro-img" />
                 <div className="texto">
-                  <p className="nombre">Cuarto Miembro</p>
-                  <p className="instagram">@cuarto_miembro</p>
+                  <p className="nombre">Majo</p>
+                  <p className="instagram">@majo_dida08</p>
                 </div>
               </div>
             </a>
-            <a href="https://instagram.com/quinto_miembro" target="_blank" rel="noopener noreferrer" className="link-contenido">
+            <a href="https://www.instagram.com/roque_pinkydoo/" target="_blank" rel="noopener noreferrer" className="link-contenido">
               <div className="contenido2">
                 <img src={Miembro5} alt="Quinto Miembro" className="miembro-img" />
                 <div className="texto">
-                  <p className="nombre">Quinto Miembro</p>
-                  <p className="instagram">@quinto_miembro</p>
+                  <p className="nombre">Roque Arias</p>
+                  <p className="instagram">@roque_pinkydoo</p>
                 </div>
               </div>
             </a>
-            <a href="https://instagram.com/sexto_miembro" target="_blank" rel="noopener noreferrer" className="link-contenido">
+            <a href="https://www.instagram.com/cristianfabiansoria1978/" target="_blank" rel="noopener noreferrer" className="link-contenido">
               <div className="contenido2">
                 <img src={Miembro6} alt="Sexto Miembro" className="miembro-img" />
                 <div className="texto">
-                  <p className="nombre">Sexto Miembro</p>
-                  <p className="instagram">@sexto_miembro</p>
+                  <p className="nombre">Cris</p>
+                  <p className="instagram">@cristianfabiansoria1978</p>
                 </div>
               </div>
             </a>
