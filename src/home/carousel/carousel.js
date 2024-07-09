@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Ocho from '../../imagenes/8.jpeg';
-import Siete from '../../imagenes/7.jpeg';
+import Siete from '../../imagenes/noticiasImagenes/gonzaNoticia.jpeg';
 import '../../App.css'; // Importa el archivo CSS donde definirás los estilos
 
 function Carousel() {
@@ -25,8 +25,7 @@ function Carousel() {
           <div className="carousel-item">
             <img src={Siete} className="d-block w-100 carousel-img" alt="Descripción de la segunda imagen" />
             <div className="carousel-caption d-none d-md-block">
-              <h1>Título del segundo slide</h1>
-              <p>Contenido representativo del segundo slide.</p>
+              <h1>Gonza Debutó en cross</h1>
             </div>
           </div>
         </div>
