@@ -19,7 +19,7 @@ function Precio() {
                         <div className='div1Precio'>
                             <i className="bi bi-currency-dollar"></i>
                             <div className="precioEnSi">        
-                                <span><h5 className='h5Precio3'>10.000<br/>ARS</h5></span>
+                                <span><h5 className='h5Precio3'>13.000<br/>ARS</h5></span>
                             </div>
                         </div>
                         <div className='div2Precio'>

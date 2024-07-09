@@ -7,7 +7,7 @@ import Imagen1 from '../imagenes/contactoImagenes/imagenContacto.png';
 import Imagen2 from '../imagenes/contactoImagenes/imagenContacto2.png';
 import Imagen3 from '../imagenes/contactoImagenes/imagenContacto3.png';
 import Imagen4 from '../imagenes/contactoImagenes/imagenContacto4.png';
-import Imagen5 from '../imagenes/pame.jpeg';
+import Imagen5 from '../imagenes/nuestraProfesora/pameHome3.webp';
 import Mapa from './mapa';
 
 function Contacto() {

@@ -2,7 +2,7 @@
 import React from 'react';
 import '../../App.css';
 import { useNavigate } from 'react-router-dom'; 
-import Seis from '../../imagenes/6.jpeg'
+import Seis from '../../imagenes/miembros5.jpeg'
 
 function NoticiaEnSi3() {
     const navigate = useNavigate(); 
@@ -18,19 +18,23 @@ function NoticiaEnSi3() {
             VOLVER
             </div>
             <div className='contenido'>
-                <h3><strong>Hermoso arcoiris luego de unas duras pasadas</strong></h3>
-                <i>8 de Diciembre de 2023</i>
+                <h3><strong>Fabio bajó los 40 minutos en 10KM</strong></h3>
+                <i>6 de Julio de 2024</i>
                 <p className='parrafo-especial'>
-                Durante un entrenamiento rutinario, los corredores fueron testigos de un momento especial
-                 al final del día: un hermoso arcoíris pintó el cielo con sus colores vibrantes. 
+                Fabio ha logrado un impresionante hito en su carrera de atletismo al bajar los 40 minutos 
+                en los 10km. Con una combinación de entrenamiento intenso, disciplina y determinación, Fabio
+                 se preparó meticulosamente para este desafío. Durante la carrera, mantuvo un ritmo constante
+                  y estratégico, concentrándose en su respiración y técnica para optimizar cada paso.
                         </p>
                 <img src={Seis} alt='Foto antes de la despedida'></img>
                 <i>RP RUNNING TEAM</i>
-                <h4>El arcoiris</h4>
+                <h4>Último esfuerzo</h4>
                 <p>
-                Este regalo inesperado de la naturaleza no solo elevó los ánimos del equipo, sino que también
-                 sirvió como recordatorio del poder transformador del ejercicio y la belleza que rodea sus 
-                 esfuerzos.
+                En los kilómetros finales, su determinación se hizo aún más evidente mientras aceleraba,
+                 motivado por el objetivo de romper la barrera de los 40 minutos. Al cruzar la línea de 
+                 meta en 39:45, Fabio no solo alcanzó una nueva marca personal, sino que también demostró
+                  que con esfuerzo y dedicación, cualquier meta es alcanzable. Su logro es un testimonio
+                   de su compromiso y pasión por el deporte.
                    </p>
                 
             </div>

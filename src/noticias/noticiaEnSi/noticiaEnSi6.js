@@ -2,7 +2,7 @@
 import React from 'react';
 import '../../App.css';
 import { useNavigate } from 'react-router-dom'; 
-import Nueve from '../../imagenes/9.jpeg'
+import Nueve from '../../imagenes/miembros9.jpeg'
 
 function NoticiaEnSi6() {
     const navigate = useNavigate(); 

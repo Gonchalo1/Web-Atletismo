@@ -2,12 +2,12 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import '../../App.css';
 
-import Miembro1 from '../../imagenes/10.jpeg'; 
-import Miembro2 from '../../imagenes/11.jpeg';
-import Miembro3 from '../../imagenes/12.jpeg';
-import Miembro4 from '../../imagenes/13.jpeg'; 
-import Miembro5 from '../../imagenes/14.jpeg';
-import Miembro6 from '../../imagenes/15.jpeg';
+import Miembro1 from '../../imagenes/miembros10.jpeg'; 
+import Miembro2 from '../../imagenes/miembros11.jpeg';
+import Miembro3 from '../../imagenes/miembros12.jpeg';
+import Miembro4 from '../../imagenes/miembros13.jpeg'; 
+import Miembro5 from '../../imagenes/miembros14.jpeg';
+import Miembro6 from '../../imagenes/miembros15.jpeg';
 
 function Carousel2() {
   return (

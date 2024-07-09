@@ -4,12 +4,13 @@ import '../App.css';
 import Footer from '../footer/footer';
 import { Link } from 'react-router-dom';
 
-import Cuatro from '../imagenes/4.jpeg';
-import Cinco from '../imagenes/5.jpeg';
-import Seis from '../imagenes/6.jpeg';
-import Siete from '../imagenes/7.jpeg';
-import Ocho from '../imagenes/8.jpeg';
-import Nueve from '../imagenes/9.jpeg';
+import Cris from '../imagenes/noticiasImagenes/crisNoticia.jpeg'
+import Cinco from '../imagenes/miembros5.jpeg';
+import Gonza from '../imagenes/noticiasImagenes/gonzaNoticia.jpeg'
+import Seis from '../imagenes/miembros6.jpeg';
+import Siete from '../imagenes/miembros7.jpeg';
+import Ocho from '../imagenes/miembros8.jpeg';
+import Nueve from '../imagenes/miembros9.jpeg';
 import Calendario from '../imagenes/noticiasImagenes/calendario.webp';
 
 function Noticias() {
@@ -21,16 +22,16 @@ function Noticias() {
                 <Link to="/noticia/1" className="link-noticia">
                     <div className="contenedor-flex">
                         <div className='div1'>
-                            <img src={Cuatro} alt="Noticia" />
+                            <img src={Cris} alt="Noticia" />
                             <div className="icono-texto">
                                 <img src={Calendario} alt='Icono-calendario' className='icono-calendario' />
-                                <span><h5 className='h5'>12<br />Mayo</h5></span>
+                                <span><h5 className='h5'>7<br />Julio</h5></span>
                             </div>
                         </div>
                         <div className='div2'>
                             <div className='informacion'>
                                 <h4 className='h4'>
-                                    El grupo de running se juntó a festejar el 25 de Mayo post-carrera maya
+                                    Cris hizo podio en distancia de 8km
                                 </h4>
                             </div>
                         </div>
@@ -40,16 +41,16 @@ function Noticias() {
                 <Link to="/noticia/2" className="link-noticia">
                     <div className="contenedor-flex">
                         <div className='div1'>
-                            <img src={Cinco} alt="Noticia" />
+                            <img src={Gonza} alt="Noticia" />
                             <div className="icono-texto">
                                 <img src={Calendario} alt='Icono-calendario' className='icono-calendario' />
-                                <span><h5 className='h5'>6<br />Mayo</h5></span>
+                                <span><h5 className='h5'>29<br />Junio</h5></span>
                             </div>
                         </div>
                         <div className='div2'>
                             <div className='informacion'>
                                 <h4 className='h4'>
-                                    Sufrimiento luego de una grán carrera
+                                    Gonzalo Debutó en cross
                                 </h4>
                             </div>
                         </div>
@@ -59,22 +60,22 @@ function Noticias() {
                 <Link to="/noticia/3" className="link-noticia">
                     <div className="contenedor-flex">
                         <div className='div1'>
-                            <img src={Seis} alt="Noticia" />
+                            <img src={Cinco} alt="Noticia" />
                             <div className="icono-texto">
                                 <img src={Calendario} alt='Icono-calendario' className='icono-calendario' />
-                                <span><h5 className='h5'>8<br />Diciembre</h5></span>
+                                <span><h5 className='h5'>6<br />Julio</h5></span>
                             </div>
                         </div>
                         <div className='div2'>
                             <div className='informacion'>
                                 <h4 className='h4'>
-                                    Hermoso arcoiris luego de unas hermosas pasadas
+                                    Fabio Bajó los 40 minutos en los 10k
                                 </h4>
                             </div>
                         </div>
                     </div>
                 </Link>
-
+{/* 
                 <Link to="/noticia/4" className="link-noticia">
                     <div className="contenedor-flex">
                         <div className='div1'>
@@ -131,6 +132,7 @@ function Noticias() {
                         </div>
                     </div>
                 </Link>
+                */}
             </div>
             <Footer />
         </div>

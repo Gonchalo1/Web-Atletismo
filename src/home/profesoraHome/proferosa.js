@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../../App.css';
 
 // Imágenes
-import Catorce from '../../imagenes/pame.jpeg';
+import Catorce from '../../imagenes/nuestraProfesora/elemento4.jpg';
 import pame1 from '../../imagenes/nuestraProfesora/pameHome1.jpg';
 import pame2 from '../../imagenes/nuestraProfesora/pameHome2.jpg';
 import pame3 from '../../imagenes/nuestraProfesora/pameHome3.webp';

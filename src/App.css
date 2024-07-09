@@ -308,92 +308,94 @@
 
 /*CAROUSEL 2 HOME*/
 /* Estilos generales */
+/*CAROUSEL 2 HOME*/
+/* Estilos generales */
 .div-carousel2 {
     background-color: #219EBC;
     padding: 20px;
     border-radius: 10px;
-  }
+}
   
-  .div-carousel2 .carousel-content {
+.div-carousel2 .carousel-content {
     display: flex;
     justify-content: center;
     gap: 20px;
-  }
+}
   
-  .div-carousel2 .contenido2 {
+.div-carousel2 .contenido2 {
     border: 1px solid #ddd;
     border-radius: 8px;
     width: 250px;
+    height: 350px; /* Altura fija para todas las tarjetas */
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #f0f0f0;
     transition: transform 0.2s ease;
-  }
+}
   
-  .div-carousel2 .contenido2:hover {
+.div-carousel2 .contenido2:hover {
     transform: scale(1.05);
-  }
+}
   
-  .div-carousel2 .miembro-img {
+.div-carousel2 .miembro-img {
     width: 100%;
-    height: auto;
+    height: 70%; /* 70% de la altura total */
     object-fit: cover;
-  }
+}
   
-  .div-carousel2 .texto {
+.div-carousel2 .texto {
     padding: 10px;
     background-color: #e0f7ff;
     text-align: left;
-  }
+    height: 30%; /* 30% de la altura total */
+}
   
-  .div-carousel2 .nombre {
+.div-carousel2 .nombre {
     font-size: 1.2em;
     font-weight: bold;
     margin: 0;
     color: #333;
-  }
+}
   
-  .div-carousel2 .instagram {
+.div-carousel2 .instagram {
     color: #125688;
     text-decoration: none;
     margin: 0;
     transition: 0.2s;
-  }
+}
   
-  .div-carousel2 .instagram:hover {
+.div-carousel2 .instagram:hover {
     text-decoration: none;
     transform: scale(1.05);
-  }
+}
   
-  .carousel2-h3 {
+.carousel2-h3 {
     text-align: center;
     color: white;
     font-family: 'Moderniz', sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
+}
   
   
-  /* Estilos para cambiar el color de las flechas del carrusel a negro */
+/* Estilos para cambiar el color de las flechas del carrusel a negro */
   
-  /* Previo */
-  .carousel-control-prev-icon {
+/* Previo */
+.carousel-control-prev-icon {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000000" viewBox="0 0 16 16"><path d="M11.354 1.354a.5.5 0 0 1 0 .707L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
     width: 3rem;
     height: 3rem;
-  }
+}
   
-  /* Siguiente */
-  .carousel-control-next-icon {
+/* Siguiente */
+.carousel-control-next-icon {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000000" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
     width: 3rem;
     height: 3rem;
-    
-  }
+}
   
-  
-  /* Estilos para pantallas móviles */
-  @media (max-width: 768px) {
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
     .div-carousel2 .carousel-content {
         flex-direction: column;
     }
@@ -402,8 +404,7 @@
         width: 100%; /* La imagen ocupa todo el ancho en móviles */
         margin-bottom: 20px; /* Espacio entre las imágenes */
     }
-  }
-  
+}
 
 
 
@@ -1133,67 +1134,70 @@ h2 {
     max-width: 1200px; /* Ajusta el valor según necesites */
     margin: 0 auto; /* Centra el contenedor */
     padding: 0 20px; /* Añade relleno si es necesario */
+    
 }
 
 .h2 {
     text-align: left; /* Alinea el texto a la izquierda */
     margin-bottom: 20px; /* Espacio debajo del encabezado */
     /* transform: translateX(8%); Eliminado */
-    margin-left: 8%; /* Ajusta el margen en lugar de translateX */
+    margin-left: 20px; /* Agregado: Añade espacio a la izquierda */
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
 }
 
+/* Grilla */
 .grilla {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columnas de igual ancho */
-    gap: 30px; /* Ajusta el espacio entre los elementos */
-    justify-content: center; /* Centra la grilla */
-    margin-bottom: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cambiado */
+    gap: 20px;
+    transform: translateX(3%);
 }
 
+/* Enlaces y Contenido */
 .link-contenido {
     text-decoration: none;
     color: inherit;
-    display: block; /* Para que el enlace ocupe todo el contenedor */
+    display: block;
+    margin-bottom: 20px; /* Ajusta el espacio inferior */
 }
 
 .contenido2 {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 300px; /* Aumenta el tamaño del contenedor */
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #f0f0f0; /* Fondo del contenedor */
-    transition: transform 0.2s ease;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
 }
 
 .contenido2:hover {
-    transform: scale(1.05); /* Efecto de escala en hover */
+    transform: translateY(-5px);
 }
 
+/* Imágenes de Miembros */
 .miembro-img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: auto; /* Ajusta automáticamente la altura */
+    width: 100%;
+    height: 200px; /* Ajusta la altura según necesites */
     object-fit: cover;
-    margin-left: 0; /* Elimina margen */
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
+/* Texto */
 .texto {
-    padding: 10px;
-    background-color: #e0f7ff; /* Fondo azul celeste para el texto */
     text-align: left;
 }
 
 .nombre {
-    font-size: 1.2em;
+    font-size: 18px;
     font-weight: bold;
-    margin: 0;
-    color: #333;
+    margin-bottom: 5px;
 }
 
 .instagram {
-    color: #125688; /* Color típico de Instagram */
-    text-decoration: none;
-    margin: 0;
+    font-size: 14px;
+    color: #666;
 }
 
 .instagram:hover {
@@ -2495,7 +2499,6 @@ h2 {
   .imagen-contenedor img {
     width: 100%;
     height: auto;
-    cursor: pointer;
     border-radius: 8px;
     transition: transform 0.3s;
   }

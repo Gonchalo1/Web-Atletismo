@@ -2,7 +2,7 @@
 import React from 'react';
 import '../../App.css';
 import { useNavigate } from 'react-router-dom'; 
-import Uno from '../../imagenes/4.jpeg'
+import Uno from '../../imagenes/noticiasImagenes/crisNoticia.jpeg'
 
 function NoticiaEnSi1() {
     const navigate = useNavigate(); 
@@ -18,23 +18,21 @@ function NoticiaEnSi1() {
             VOLVER
             </div>
             <div className='contenido'>
-                <h3><strong>El equipo de running se juntó a festejar el 25 de mayo post-carrera maya</strong></h3>
-                <i>25 de Mayo de 2024</i>
+                <h3><strong>Cris hizo podio en Distancia de 8k</strong></h3>
+                <i>7 de Julio de 2024</i>
                 <p className='parrafo-especial'>
-                    El pasado 25 de mayo, tras una exitosa participación en la Carrera Maya, el equipo de
-                     running se reunió para una festiva celebración en la casa de Sandra. Esta jornada, 
-                     cargada de alegría y camaradería, se convirtió en una memorable ocasión para todos 
-                     los miembros del equipo.Desde el mediodía, el cálido hogar de Sandra se llenó de risas
-                      y conversaciones animadas.
+                Cris participó en una emocionante carrera de 8km, demostrando una gran determinación y esfuerzo. 
+                Desde el inicio, Cris se mantuvo concentrado y gestionó su energía de manera inteligente,
+                 manteniendo un ritmo constante a pesar de los desafíos del terreno.
                         </p>
                 <img src={Uno} alt='Foto antes de la despedida'></img>
                 <i>RP RUNNING TEAM</i>
-                <h4>La Cena</h4>
+                <h4>Ultimos KM</h4>
                 <p>
-                    La comida se sirvió al estilo familiar, con grandes fuentes en el centro de la mesa, de las que
-                     cada uno se servía generosamente. El locro, acompañado de pan casero y un toque de salsa picante,
-                      no solo sació el hambre de los corredores, sino que también les brindó un momento para relajarse
-                       y disfrutar después del esfuerzo físico de la carrera.
+                En los últimos kilómetros, cuando el cansancio comenzaba a hacerse sentir, Cris sacó fuerzas de donde
+                 parecía no haber, apretando el paso y superando a varios competidores. Gracias a su dedicación y 
+                 perseverancia, logró alcanzar el podio, manteniéndose firme y decidido hasta cruzar la línea de meta.
+                  ¡Una verdadera muestra de esfuerzo y superación!
                        </p>
                 
             </div>

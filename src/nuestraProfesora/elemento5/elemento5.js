@@ -1,21 +1,21 @@
 import React from "react";
 import '../../App.css';
-import Thumbnail1 from '../../imagenes/11.jpeg';
-import Thumbnail2 from '../../imagenes/pame.jpeg';
-import Thumbnail3 from '../../imagenes/1.jpeg';
+import Thumbnail1 from '../../imagenes/nuestraProfesora/elemento4.jpg';
+import Thumbnail2 from '../../imagenes/nuestraProfesora/carousel3.jpg';
+import Thumbnail3 from '../../imagenes/nuestraProfesora/pameHome1.jpg';
 
 const images = [
   {
     thumbnail: Thumbnail1,
-    description: "1mera competencia",
+    description: "Nacional de mayores Mar Del Plata",
   },
   {
     thumbnail: Thumbnail2,
-    description: "2da competencia",
+    description: "Media Maratón de Buenos Aires 21k",
   },
   {
     thumbnail: Thumbnail3,
-    description: "3cera competencia",
+    description: "Fiestas Mayas",
   },
 ];
 
