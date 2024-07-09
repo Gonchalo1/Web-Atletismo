@@ -40,11 +40,11 @@ function Miembros() {
                         </div>
                     </div>
                 </a>
-                <a href="https://instagram.com/juan23_" target="_blank" rel="noopener noreferrer" className="link-contenido">
+                <a href="https://www.instagram.com/noeromano08/" target="_blank" rel="noopener noreferrer" className="link-contenido">
                     <div className="contenido2">
                         <img src={Dos} alt="Juan Perez" className="miembro-img" />
                         <div className="texto">
-                            <p className="nombre">Noelia Perez</p>
+                            <p className="nombre">Noelia Romano</p>
                             <p className="instagram">@noe..l</p>
                         </div>
                     </div>
