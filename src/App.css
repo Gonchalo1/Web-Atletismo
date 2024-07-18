@@ -40,6 +40,7 @@
 .email-text {
     font-size: 16px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 /* Estilos para la barra de navegación */
