@@ -9,7 +9,7 @@ function Elemento4() {
         <div className="image-container-elemento4">
           <div className="image-overlay-elemento4">
             <img src={Fondo} alt='Imagen 4' className="imagen4"/>
-            <a href="https://www.instagram.com/tu_cuenta_de_instagram" className="instagram-link-elemento4">
+            <a href="https://www.instagram.com/pamela.maidana.90/#" className="instagram-link-elemento4">
               Instagram
             </a>
           </div>

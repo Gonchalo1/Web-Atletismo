@@ -30,7 +30,7 @@ const InstagramPost = () => {
             <h1 className='h1dos'>Ultimos posts</h1>
             <blockquote className="instagram-media"
                         data-instgrm-captioned
-                        data-instgrm-permalink="https://www.instagram.com/p/C467WVYLKeI/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                        data-instgrm-permalink="https://www.instagram.com/p/C8PbVGIO1ks/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                         data-instgrm-version="13"></blockquote>
           </div>
         </div>

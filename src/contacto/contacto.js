@@ -97,7 +97,9 @@ function Contacto() {
         <div className="imagen-coach-wrapper">
           <img src={Imagen5} alt='Pame' className="imagen-coach" />
           <div className="overlay">
-            <i className="bi bi-instagram icono-instagram"></i>
+            <i className="bi bi-instagram icono-instagram">
+            <a href="https://www.instagram.com/pamela.maidana.90/#" className="instagram-link-elemento4"></a>
+            </i>
           </div>
         </div>
         <div className="texto">

@@ -23,7 +23,7 @@ import Dieciocho from '../imagenes/miembros18.jpeg';
 import Diecinueve from '../imagenes/miembros19.jpeg'; 
 import Veinte from '../imagenes/miembros20.jpeg'; 
 import Veintiuno from '../imagenes/miembros21.jpeg'; 
-
+import Veintidos from '../imagenes/miembros22.jpeg';
 
 function Miembros() {
     return (
@@ -218,6 +218,15 @@ function Miembros() {
                         <div className="texto">
                             <p className="nombre">Dario Akd Rementeria</p>
                             <p className="instagram">@darioakdrementeria</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/lilitoro2202/#" target="_blank" rel="noopener noreferrer" className="link-contenido">
+                    <div className="contenido2">
+                        <img src={Veintidos} alt="Lili toro" className="miembro-img" />
+                        <div className="texto">
+                            <p className="nombre">Lily Toro</p>
+                            <p className="instagram">@lilitoro2202</p>
                         </div>
                     </div>
                 </a>
